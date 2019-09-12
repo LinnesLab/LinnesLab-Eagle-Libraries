@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1836,6 +1836,44 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="10-QFN">
+<smd name="5" x="0" y="-0.95" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<smd name="10" x="0" y="0.95" dx="0.8" dy="0.3" layer="1" rot="R90"/>
+<wire x1="-0.95" y1="0.95" x2="0.95" y2="0.95" width="0.127" layer="21"/>
+<wire x1="0.95" y1="0.95" x2="0.95" y2="-0.95" width="0.127" layer="21"/>
+<wire x1="0.95" y1="-0.95" x2="-0.95" y2="-0.95" width="0.127" layer="21"/>
+<smd name="1" x="-0.95" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="2" x="-0.95" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="3" x="-0.95" y="-0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="4" x="-0.95" y="-0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="9" x="0.95" y="0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="8" x="0.95" y="0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="7" x="0.95" y="-0.25" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<smd name="6" x="0.95" y="-0.75" dx="0.8" dy="0.3" layer="1" rot="R180"/>
+<wire x1="0.95" y1="0.95" x2="0.95" y2="-0.95" width="0.127" layer="21"/>
+<wire x1="-0.95" y1="0.95" x2="-0.95" y2="-0.95" width="0.127" layer="21"/>
+<text x="-2.8" y="1.8" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.8" y="-2.8" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="8-BSOP">
+<wire x1="-6.1595" y1="6.1595" x2="-6.1595" y2="-6.1595" width="0.127" layer="21"/>
+<wire x1="-6.1595" y1="-6.1595" x2="6.1595" y2="-6.1595" width="0.127" layer="21"/>
+<wire x1="6.1595" y1="-6.1595" x2="6.1595" y2="6.1595" width="0.127" layer="21"/>
+<wire x1="6.1595" y1="6.1595" x2="-6.1595" y2="6.1595" width="0.127" layer="21"/>
+<smd name="P$1" x="7.62" y="1.27" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$2" x="7.62" y="3.81" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$3" x="7.62" y="-1.27" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$4" x="7.62" y="-3.81" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$5" x="-7.62" y="3.81" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$6" x="-7.62" y="1.27" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$7" x="-7.62" y="-1.27" dx="2.7305" dy="1.0668" layer="1"/>
+<smd name="P$8" x="-7.62" y="-3.81" dx="2.7305" dy="1.0668" layer="1"/>
+<text x="-6.096" y="8.7376" size="1.27" layer="25">&gt;Name</text>
+<text x="-6.0452" y="6.8834" size="1.27" layer="25">&gt;Value</text>
+<wire x1="-3.1242" y1="-6.1595" x2="-3.1242" y2="-12.7635" width="0.127" layer="25"/>
+<wire x1="-3.1242" y1="-12.7635" x2="-1.016" y2="-12.7635" width="0.127" layer="25"/>
+<wire x1="-1.016" y1="-12.7635" x2="-1.016" y2="-6.1595" width="0.127" layer="25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PRESS-SENSE">
@@ -2304,6 +2342,19 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SI1132">
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="VDD" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SDA" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="-7.62" y="6.35" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+<pin name="INT" x="12.7" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3053,6 +3104,25 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI1132">
+<gates>
+<gate name="G$1" symbol="SI1132" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="10-QFN">
+<connects>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="INT" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3 6 7 9"/>
 </connects>
 <technologies>
 <technology name=""/>

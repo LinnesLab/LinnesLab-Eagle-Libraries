@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -155,18 +155,6 @@
 </layers>
 <library>
 <packages>
-<package name="CALVENGIO_HANDLE.1">
-<text x="-10.16" y="-1.27" size="2.54" layer="21" font="vector" ratio="15">@CalvEngIO</text>
-</package>
-<package name="CALVENGIO_HANDLE.05">
-<text x="-5.08" y="0" size="1.27" layer="21" font="vector" ratio="15">@CalvEngIO</text>
-</package>
-<package name="CALVENGIO_HANDLE.075">
-<text x="-7.62" y="0" size="1.905" layer="21" font="vector" ratio="15">@CalvEngIO</text>
-</package>
-<package name="CALVENGIO_HANDLE.08">
-<text x="-8.382" y="-1.27" size="2.032" layer="21" font="vector" ratio="15">@CalvEngIO</text>
-</package>
 <package name="OSHW-LOGO-S_COPPER">
 <description>&lt;h3&gt;Open-Source Hardware (OSHW) Logo - Small - Top Copper&lt;/h3&gt;
 &lt;p&gt;Exposed copper logo for open-source hardware designs.&lt;/p&gt;
@@ -1752,9 +1740,6 @@
 <package name="WEBSITE.05">
 <text x="-6.35" y="0" size="1.27" layer="21">http://calveng.io</text>
 </package>
-<package name="CALVENGIO_HANDLE.025">
-<text x="-2.54" y="0" size="0.635" layer="21" font="vector" ratio="15">@CalvEngIO</text>
-</package>
 <package name="PURDUE_BME_HANDLE.1">
 <text x="-11.43" y="0" size="2.54" layer="21">@PurdueBME</text>
 </package>
@@ -1809,9 +1794,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="CALVENGIO_HANDLE.15">
-<text x="0" y="0" size="3.81" layer="90" font="vector" ratio="15">@CalvEngIO</text>
-</symbol>
 <symbol name="OSHW-LOGO">
 <description>&lt;h3&gt;Open-Source Hardware (OSHW) Logo&lt;/h3&gt;
 &lt;p&gt; This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware found here: &lt;a href="http://freedomdefined.org/OSHW"&gt;http://freedomdefined.org/OSHW&lt;/a&gt;&lt;/p&gt;
@@ -7049,38 +7031,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CALVENGIO_HANDLE">
-<gates>
-<gate name="G$1" symbol="CALVENGIO_HANDLE.15" x="0" y="0"/>
-</gates>
-<devices>
-<device name="HANDLE.025" package="CALVENGIO_HANDLE.025">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HANDLE.1" package="CALVENGIO_HANDLE.1">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HANDLE.05" package="CALVENGIO_HANDLE.05">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HANDLE.075" package="CALVENGIO_HANDLE.075">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="HANDLE.08" package="CALVENGIO_HANDLE.08">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="OSHW-LOGO" prefix="LOGO">
 <description>&lt;h3&gt;Open-Source Hardware (OSHW) Logo&lt;/h3&gt;
 &lt;p&gt; This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware found here: &lt;a href="http://freedomdefined.org/OSHW"&gt;http://freedomdefined.org/OSHW&lt;/a&gt;&lt;/p&gt;</description>
