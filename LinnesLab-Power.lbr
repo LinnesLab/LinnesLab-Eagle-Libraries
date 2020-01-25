@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1008,6 +1008,47 @@ part number 2062-2P from STA</description>
 <wire x1="-5.08" y1="10.16" x2="-26.67" y2="10.16" width="0.127" layer="21"/>
 <wire x1="-26.67" y1="-10.16" x2="-5.08" y2="-10.16" width="0.127" layer="21"/>
 </package>
+<package name="8-WDFN(3X4)">
+<description>TDFN - 8pin, 2mmx3mm</description>
+<wire x1="-2.15" y1="1.15" x2="-2.15" y2="-1.15" width="0.127" layer="51"/>
+<wire x1="-2.15" y1="-1.15" x2="2.15" y2="-1.15" width="0.127" layer="51"/>
+<wire x1="2.15" y1="-1.15" x2="2.15" y2="1.15" width="0.127" layer="51"/>
+<wire x1="2.15" y1="1.15" x2="-2.15" y2="1.15" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.15" x2="-1.45" y2="1.15" width="0.127" layer="21"/>
+<wire x1="-1.45" y1="1.15" x2="1.5" y2="1.15" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-1.15" x2="1.5" y2="-1.15" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="1.15" x2="-1.45" y2="1.15" width="0.2032" layer="21" curve="-345.749967"/>
+<smd name="EP" x="0" y="0" dx="2.56" dy="1.96" layer="1" stop="no" cream="no"/>
+<smd name="1" x="-1.8" y="0.75" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="2" x="-1.8" y="0.25" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="4" x="-1.8" y="-0.75" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="3" x="-1.8" y="-0.25" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="8" x="1.8" y="0.75" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="7" x="1.8" y="0.25" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="5" x="1.8" y="-0.75" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<smd name="6" x="1.8" y="-0.25" dx="0.7" dy="0.35" layer="1" stop="no" cream="no"/>
+<text x="-0.9" y="1.4" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.7" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.2" y1="0.6" x2="-1.4" y2="0.9" layer="29"/>
+<rectangle x1="-2.2" y1="0.6" x2="-1.4" y2="0.9" layer="29"/>
+<rectangle x1="-2.2" y1="-0.4" x2="-1.4" y2="-0.1" layer="29"/>
+<rectangle x1="-2.2" y1="0.1" x2="-1.4" y2="0.4" layer="29"/>
+<rectangle x1="-2.2" y1="-0.9" x2="-1.4" y2="-0.6" layer="29"/>
+<rectangle x1="1.4" y1="0.6" x2="2.2" y2="0.9" layer="29"/>
+<rectangle x1="1.4" y1="0.1" x2="2.2" y2="0.4" layer="29"/>
+<rectangle x1="1.4" y1="-0.4" x2="2.2" y2="-0.1" layer="29"/>
+<rectangle x1="1.4" y1="-0.9" x2="2.2" y2="-0.6" layer="29"/>
+<rectangle x1="-1.3" y1="-1" x2="1.3" y2="1" layer="29"/>
+<rectangle x1="-0.3302" y1="-0.3302" x2="0.3302" y2="0.3302" layer="31"/>
+<rectangle x1="-2.17545625" y1="0.61721875" x2="-1.42108125" y2="0.88138125" layer="31"/>
+<rectangle x1="-2.177996875" y1="0.1143" x2="-1.423621875" y2="0.3784625" layer="31"/>
+<rectangle x1="-2.177996875" y1="-0.381" x2="-1.423621875" y2="-0.1168375" layer="31"/>
+<rectangle x1="-2.177996875" y1="-0.88391875" x2="-1.423621875" y2="-0.61975625" layer="31"/>
+<rectangle x1="1.421084375" y1="0.61721875" x2="2.175459375" y2="0.88138125" layer="31"/>
+<rectangle x1="1.423625" y1="0.119378125" x2="2.178" y2="0.383540625" layer="31"/>
+<rectangle x1="1.423625" y1="-0.381003125" x2="2.178" y2="-0.116840625" layer="31"/>
+<rectangle x1="1.426165625" y1="-0.881384375" x2="2.180540625" y2="-0.617221875" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX-1">
@@ -1238,6 +1279,22 @@ part number 2062-2P from STA</description>
 <pin name="VIN" x="-12.7" y="0" length="middle"/>
 <pin name="VOUT" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="GND" x="-12.7" y="-5.08" length="middle"/>
+</symbol>
+<symbol name="LC709203F">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="TEST" x="-15.24" y="2.54" length="middle"/>
+<pin name="VSS" x="-15.24" y="0" length="middle"/>
+<pin name="VDD" x="-15.24" y="-2.54" length="middle"/>
+<pin name="ALARM" x="-15.24" y="-5.08" length="middle"/>
+<pin name="SCL" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="TSENSE" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="TSW" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1596,6 +1653,28 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="VIN" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LC709203F">
+<gates>
+<gate name="G$1" symbol="LC709203F" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8-WDFN(3X4)">
+<connects>
+<connect gate="G$1" pin="ALARM" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="8"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="TEST" pad="1"/>
+<connect gate="G$1" pin="TSENSE" pad="6"/>
+<connect gate="G$1" pin="TSW" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
