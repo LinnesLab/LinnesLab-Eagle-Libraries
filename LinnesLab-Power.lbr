@@ -67,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -94,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -1049,6 +1054,23 @@ part number 2062-2P from STA</description>
 <rectangle x1="1.423625" y1="-0.381003125" x2="2.178" y2="-0.116840625" layer="31"/>
 <rectangle x1="1.426165625" y1="-0.881384375" x2="2.180540625" y2="-0.617221875" layer="31"/>
 </package>
+<package name="MAX17048.CAST">
+<wire x1="-2.413" y1="2.54" x2="2.413" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.413" y1="2.54" x2="2.413" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-2.54" x2="-2.413" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="-2.54" x2="-2.413" y2="2.54" width="0.127" layer="21"/>
+<circle x="-0.8382" y="1.27" radius="0.198378125" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="1.016" width="0.127" layer="21"/>
+<wire x1="1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="1.016" y1="-1.016" x2="-1.016" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-1.016" x2="-1.016" y2="1.016" width="0.127" layer="21"/>
+<text x="-3.0734" y="2.921" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.9464" y="-4.1148" size="1.27" layer="27">&gt;Value</text>
+<smd name="1" x="-2.413" y="1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="2" x="-2.413" y="-1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="3" x="2.413" y="-1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+<smd name="4" x="2.413" y="1.27" dx="1.27" dy="0.635" layer="1" roundness="100" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="78XX-1">
@@ -1295,6 +1317,18 @@ part number 2062-2P from STA</description>
 <pin name="TSW" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <text x="-10.16" y="5.08" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="MAX17048_CAST">
+<wire x1="-10.16" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="SDA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="CELL" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1675,6 +1709,24 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <connect gate="G$1" pin="TSW" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
 <connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX17048_CAST" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MAX17048_CAST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAX17048.CAST">
+<connects>
+<connect gate="G$1" pin="CELL" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
