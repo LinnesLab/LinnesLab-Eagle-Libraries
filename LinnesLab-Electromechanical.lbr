@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -55,7 +55,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -146,6 +146,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -216,7 +218,33 @@
 <text x="-3.2" y="4" size="1.27" layer="25">&gt;Name</text>
 <text x="-3.2" y="-4.8" size="1.27" layer="27">&gt;Value</text>
 </package>
+<package name="MICROPHONE_01">
+<pad name="+" x="-1" y="0.95" drill="0.5" rot="R270"/>
+<pad name="-" x="-1" y="-0.95" drill="0.5" rot="R270"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<text x="-2.54" y="3.81" size="1.016" layer="25">&gt;Name</text>
+<text x="-2.54" y="-4.445" size="1.016" layer="27">&gt;Value</text>
+<text x="-2.5654" y="0.3302" size="1.27" layer="21" font="vector" ratio="15">+</text>
+</package>
+<package name="MICROPHONE_CMEJ-0415-42-P" urn="urn:adsk.eagle:footprint:17873358/1">
+<pad name="+" x="-0.7" y="-0.45" drill="0.55" diameter="0.95"/>
+<pad name="-" x="0.7" y="-0.45" drill="0.55" diameter="0.95"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="21"/>
+<text x="-2.64" y="2.41" size="1.016" layer="25">&gt;Name</text>
+<text x="-2.44" y="-3.445" size="1.016" layer="27">&gt;Value</text>
+<text x="-0.7302" y="0.1346" size="1.27" layer="21" font="vector" ratio="10" rot="R90">+</text>
+<text x="0.9" y="-2.3" size="0.3" layer="47">1.5mm tall</text>
+</package>
 </packages>
+<packages3d>
+<package3d name="MICROPHONE_CMEJ-0415-42-P" urn="urn:adsk.eagle:package:17873357/2" type="model">
+<description>Radial Non-Polarized Capacitor, 1.40 mm pitch, 4.00 mm body diameter, 1.50 mm body height
+&lt;p&gt;Radial Non-Polarized Capacitor package with 1.40 mm pitch (lead spacing), 0.40 mm lead diameter, 4.00 mm body diameter and 1.50 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="MICROPHONE_CMEJ-0415-42-P"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="SPEAKER">
 <pin name="+" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
@@ -381,6 +409,14 @@
 <text x="-10.16" y="10.16" size="2.032" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="2.032" layer="96">&gt;Value</text>
 </symbol>
+<symbol name="MICROPHONE">
+<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94" curve="-215"/>
+<wire x1="0" y1="-7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="+" x="7.62" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="-" x="7.62" y="-5.08" visible="pin" length="short" rot="R180"/>
+<text x="0" y="1.27" size="1.778" layer="95">&gt;Name</text>
+<text x="0" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SPK-SR6438NWS-000">
@@ -399,7 +435,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="VIB.MOTOR.C0720B015F" prefix="M">
+<deviceset name="VIB.MOTOR.C0720B015F" prefix="M" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="MOTOR" x="0" y="0"/>
 </gates>
@@ -513,7 +549,47 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="MICROPHONE_CMC-5042PF-AC" prefix="MIC" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MICROPHONE" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name=".CMC-5042PF-AC" package="MICROPHONE_01">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".CMEJ-0415-42-P" package="MICROPHONE_CMEJ-0415-42-P">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17873357/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>

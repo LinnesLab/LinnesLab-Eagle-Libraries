@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -157,7 +157,7 @@
 </layers>
 <library>
 <packages>
-<package name="C0402">
+<package name="C0402" urn="urn:adsk.eagle:footprint:15402269/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
@@ -173,7 +173,7 @@
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C0603">
+<package name="C0603" urn="urn:adsk.eagle:footprint:15661990/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-1.473" y1="0.5766" x2="1.473" y2="0.5766" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.5766" x2="1.473" y2="-0.5766" width="0.0508" layer="39"/>
@@ -189,7 +189,7 @@
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C0805">
+<package name="C0805" urn="urn:adsk.eagle:footprint:15662011/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
@@ -205,23 +205,7 @@
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 </package>
-<package name="R0402-SMALL">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-0.6968" y1="0.383" x2="0.6968" y2="0.383" width="0.0508" layer="39"/>
-<wire x1="0.6968" y1="0.383" x2="0.6968" y2="-0.383" width="0.0508" layer="39"/>
-<wire x1="0.6968" y1="-0.383" x2="-0.6968" y2="-0.383" width="0.0508" layer="39"/>
-<wire x1="-0.6968" y1="-0.383" x2="-0.6968" y2="0.383" width="0.0508" layer="39"/>
-<smd name="1" x="-0.4" y="0" dx="0.45" dy="0.65" layer="1"/>
-<smd name="2" x="0.4" y="0" dx="0.45" dy="0.65" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
-<package name="R0603">
+<package name="R0603" urn="urn:adsk.eagle:footprint:15661945/1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -237,7 +221,7 @@
 <rectangle x1="-0.8382" y1="-0.4318" x2="-0.4318" y2="0.4318" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
-<package name="R0805">
+<package name="R0805" urn="urn:adsk.eagle:footprint:15661948/1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
@@ -1231,7 +1215,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <rectangle x1="-1.3168" y1="-0.6985" x2="-0.6668" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
-<package name="R0201">
+<package name="R0201" urn="urn:adsk.eagle:footprint:15664889/1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt; chip&lt;p&gt;
 Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <smd name="1" x="-0.255" y="0" dx="0.28" dy="0.43" layer="1"/>
@@ -1242,7 +1226,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <rectangle x1="0.15" y1="-0.15" x2="0.3" y2="0.15" layer="51"/>
 <rectangle x1="-0.15" y1="-0.15" x2="0.15" y2="0.15" layer="21"/>
 </package>
-<package name="C0201">
+<package name="C0201" urn="urn:adsk.eagle:footprint:15818462/1">
 <description>Source: http://www.avxcorp.com/docs/catalogs/cx5r.pdf</description>
 <smd name="1" x="-0.25" y="0" dx="0.25" dy="0.35" layer="1"/>
 <smd name="2" x="0.25" y="0" dx="0.25" dy="0.35" layer="1"/>
@@ -1515,40 +1499,7 @@ type 0207, grid 10 mm</description>
 <text x="-1.905" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.905" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="R0402-BIGGER">
-<description>&lt;p&gt;&lt;b&gt;Generic 1005 (0402) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-0.2704" y1="0.2286" x2="0.2704" y2="0.2286" width="0.1524" layer="51"/>
-<wire x1="0.2704" y1="-0.2286" x2="-0.2704" y2="-0.2286" width="0.1524" layer="51"/>
-<wire x1="-1.073" y1="0.523" x2="1.0476" y2="0.523" width="0.0508" layer="39"/>
-<wire x1="1.0476" y1="0.523" x2="1.0476" y2="-0.523" width="0.0508" layer="39"/>
-<wire x1="1.0476" y1="-0.523" x2="-1.073" y2="-0.523" width="0.0508" layer="39"/>
-<wire x1="-1.073" y1="-0.523" x2="-1.073" y2="0.523" width="0.0508" layer="39"/>
-<smd name="1" x="-0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<smd name="2" x="0.58" y="0" dx="0.85" dy="0.9" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="C0402-SMALLER">
-<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
-<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
-<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-0.7174" y1="0.383" x2="0.7174" y2="0.383" width="0.0508" layer="39"/>
-<wire x1="0.7174" y1="0.383" x2="0.7174" y2="-0.383" width="0.0508" layer="39"/>
-<wire x1="0.7174" y1="-0.383" x2="-0.7174" y2="-0.383" width="0.0508" layer="39"/>
-<wire x1="-0.7174" y1="-0.383" x2="-0.7174" y2="0.383" width="0.0508" layer="39"/>
-<smd name="1" x="-0.45" y="0" dx="0.45" dy="0.65" layer="1"/>
-<smd name="2" x="0.45" y="0" dx="0.45" dy="0.65" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
-<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="L0402">
+<package name="L0402" urn="urn:adsk.eagle:footprint:15664737/1">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
@@ -1564,7 +1515,80 @@ type 0207, grid 10 mm</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="R0402" urn="urn:adsk.eagle:footprint:15661899/1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.0968" y1="0.483" x2="1.0968" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.0968" y1="0.483" x2="1.0968" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.0968" y1="-0.483" x2="-1.0968" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.0968" y1="-0.483" x2="-1.0968" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="R0603" urn="urn:adsk.eagle:package:15661944/2" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="R0603"/>
+</packageinstances>
+</package3d>
+<package3d name="R0805" urn="urn:adsk.eagle:package:15661947/2" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
+<packageinstances>
+<packageinstance name="R0805"/>
+</packageinstances>
+</package3d>
+<package3d name="R0402" urn="urn:adsk.eagle:package:15661898/2" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="R0402"/>
+</packageinstances>
+</package3d>
+<package3d name="R0201" urn="urn:adsk.eagle:package:15664888/2" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; chip&lt;p&gt;
+Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
+<packageinstances>
+<packageinstance name="R0201"/>
+</packageinstances>
+</package3d>
+<package3d name="C0603" urn="urn:adsk.eagle:package:15661989/2" type="model">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="C0603"/>
+</packageinstances>
+</package3d>
+<package3d name="C0402" urn="urn:adsk.eagle:package:15402268/2" type="model">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="C0402"/>
+</packageinstances>
+</package3d>
+<package3d name="L0402" urn="urn:adsk.eagle:package:15664735/2" type="model">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="L0402"/>
+</packageinstances>
+</package3d>
+<package3d name="C0805" urn="urn:adsk.eagle:package:15662010/2" type="model">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<packageinstances>
+<packageinstance name="C0805"/>
+</packageinstances>
+</package3d>
+<package3d name="C0201" urn="urn:adsk.eagle:package:15818461/2" type="model">
+<description>Source: http://www.avxcorp.com/docs/catalogs/cx5r.pdf</description>
+<packageinstances>
+<packageinstance name="C0201"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="C.EU">
 <wire x1="0" y1="2.54" x2="0" y2="2.032" width="0.1524" layer="94"/>
@@ -1741,20 +1765,14 @@ type 0207, grid 10 mm</description>
 <gate name="G$1" symbol="R.US" x="0" y="0"/>
 </gates>
 <devices>
-<device name="0402-SMALLER" package="R0402-SMALL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="0603" package="R0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15661944/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1764,6 +1782,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15661947/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1773,6 +1794,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15664888/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1795,11 +1819,14 @@ type 0207, grid 10 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0402-BIGGER" package="R0402-BIGGER">
+<device name="0402" package="R0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15661898/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1816,6 +1843,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15402268/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1825,6 +1855,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15661989/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1834,6 +1867,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15662010/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1843,6 +1879,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15818461/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1857,15 +1896,6 @@ type 0207, grid 10 mm</description>
 </technologies>
 </device>
 <device name="C025-030X050" package="C025-030X050">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="0402-SMALLER" package="C0402-SMALLER">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2446,6 +2476,9 @@ type 0207, grid 10 mm</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15664735/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2455,4 +2488,16 @@ type 0207, grid 10 mm</description>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>

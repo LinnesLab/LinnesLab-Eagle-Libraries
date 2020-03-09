@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -167,7 +167,7 @@
 <text x="-9.271" y="-3.048" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-6.731" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SO14">
+<package name="SO14" urn="urn:adsk.eagle:footprint:17879190/1">
 <description>&lt;b&gt;Small Outline Package 14&lt;/b&gt;</description>
 <wire x1="4.305" y1="-1.9" x2="-4.305" y2="-1.9" width="0.2032" layer="51"/>
 <wire x1="-4.305" y1="-1.9" x2="-4.305" y2="-1.4" width="0.2032" layer="51"/>
@@ -567,6 +567,12 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 <packageinstance name="DIP8-400"/>
 </packageinstances>
 </package3d>
+<package3d name="SO14" urn="urn:adsk.eagle:package:17879189/2" type="model">
+<description>&lt;b&gt;Small Outline Package 14&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SO14"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="OPAMP">
@@ -885,6 +891,9 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 <connect gate="G$5" pin="V+" pad="4"/>
 <connect gate="G$5" pin="V-" pad="11"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:17879189/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
