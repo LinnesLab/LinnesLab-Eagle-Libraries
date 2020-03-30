@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -551,6 +551,29 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 <rectangle x1="3.5301" y1="-6.095" x2="4.0899" y2="-5.08" layer="51" rot="R180"/>
 <rectangle x1="2.94" y1="-5.08" x2="4.69" y2="-4.37" layer="51"/>
 </package>
+<package name="STDFN-10" urn="urn:adsk.eagle:footprint:18427743/1">
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-0.2032" y1="0.9906" x2="-0.2032" y2="0.4318" width="0.127" layer="21"/>
+<wire x1="-0.2032" y1="0.4318" x2="0.2032" y2="0.4318" width="0.127" layer="21"/>
+<wire x1="0.2032" y1="0.4318" x2="0.2032" y2="0.9906" width="0.127" layer="21"/>
+<wire x1="0.1016" y1="0.9906" x2="0.1016" y2="0.5334" width="0.127" layer="21"/>
+<wire x1="0.1016" y1="0.5334" x2="-0.1016" y2="0.5334" width="0.127" layer="21"/>
+<wire x1="-0.1016" y1="0.5334" x2="-0.1016" y2="0.9398" width="0.127" layer="21"/>
+<wire x1="0" y1="0.9652" x2="0" y2="0.6096" width="0.127" layer="21"/>
+<smd name="3" x="-0.767" y="0" dx="0.765" dy="0.21" layer="1"/>
+<smd name="2" x="-0.767" y="0.4" dx="0.765" dy="0.21" layer="1"/>
+<smd name="1" x="-0.767" y="0.8" dx="0.765" dy="0.21" layer="1"/>
+<smd name="4" x="-0.767" y="-0.4" dx="0.765" dy="0.21" layer="1"/>
+<smd name="5" x="-0.767" y="-0.8" dx="0.765" dy="0.21" layer="1"/>
+<smd name="8" x="0.767" y="0" dx="0.765" dy="0.21" layer="1"/>
+<smd name="9" x="0.767" y="0.4" dx="0.765" dy="0.21" layer="1"/>
+<smd name="10" x="0.767" y="0.8" dx="0.765" dy="0.21" layer="1"/>
+<smd name="7" x="0.767" y="-0.4" dx="0.765" dy="0.21" layer="1"/>
+<smd name="6" x="0.767" y="-0.8" dx="0.765" dy="0.21" layer="1"/>
+<text x="-1.6" y="1.2" size="0.7112" layer="25">&gt;Name</text>
+<text x="-1.6" y="-2" size="0.7112" layer="27">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08-400" urn="urn:adsk.eagle:package:4487/1" type="box">
@@ -571,6 +594,13 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 <description>&lt;b&gt;Small Outline Package 14&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="SO14"/>
+</packageinstances>
+</package3d>
+<package3d name="STDFN-10" urn="urn:adsk.eagle:package:18427742/2" type="model">
+<description>10-SON (DFN), 0.40 mm pitch, 2.00 X 2.00 X 0.60 mm body
+&lt;p&gt;10-pin SON (DFN) package with 0.40 mm pitch with body size 2.00 X 2.00 X 0.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="STDFN-10"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -819,6 +849,28 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 <vertex x="-2.413" y="0.762"/>
 <vertex x="-2.667" y="1.143"/>
 </polygon>
+</symbol>
+<symbol name="OPAMP-S">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
+<text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="EN" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+</symbol>
+<symbol name="S.PWR+-">
+<text x="1.27" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="V+" x="0" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="V-" x="0" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
+<pin name="EN1" x="-2.54" y="2.54" length="short"/>
+<pin name="EN2" x="-2.54" y="0" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1323,6 +1375,35 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011.pdf</description>
 <technologies>
 <technology name="0"/>
 <technology name="1"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SLG88101" prefix="OP">
+<gates>
+<gate name="A" symbol="OPAMP" x="-5.08" y="10.16"/>
+<gate name="B" symbol="OPAMP" x="-5.08" y="-5.08"/>
+<gate name="P" symbol="S.PWR+-" x="12.7" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="STDFN-10">
+<connects>
+<connect gate="A" pin="+IN" pad="4"/>
+<connect gate="A" pin="-IN" pad="3"/>
+<connect gate="A" pin="OUT" pad="2"/>
+<connect gate="B" pin="+IN" pad="7"/>
+<connect gate="B" pin="-IN" pad="8"/>
+<connect gate="B" pin="OUT" pad="9"/>
+<connect gate="P" pin="EN1" pad="1"/>
+<connect gate="P" pin="EN2" pad="6"/>
+<connect gate="P" pin="V+" pad="10"/>
+<connect gate="P" pin="V-" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18427742/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

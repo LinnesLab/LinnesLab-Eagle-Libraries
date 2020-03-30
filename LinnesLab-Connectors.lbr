@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1144,7 +1144,7 @@ part number 2062-2P from STA</description>
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <wire x1="-0.635" y1="-1.605" x2="0.635" y2="-1.605" width="0.2032" layer="22"/>
 </package>
-<package name="2X3-NS">
+<package name="2X3-NS" urn="urn:adsk.eagle:footprint:18167649/1">
 <description>&lt;h3&gt;Plated Through Hole - 2x3 No Silk Outline&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
@@ -1175,7 +1175,9 @@ part number 2062-2P from STA</description>
 <wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.2032" layer="51"/>
 <wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.2032" layer="51"/>
 <wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="-1.905" y1="-2.875" x2="-3.175" y2="-2.875" width="0.2032" layer="51"/>
+<wire x1="-1.7018" y1="-3.1496" x2="-3.6322" y2="-3.1496" width="0.381" layer="21"/>
+<wire x1="-3.6322" y1="-3.1496" x2="-4.4196" y2="-2.3622" width="0.381" layer="21"/>
+<wire x1="-4.4196" y1="-2.3622" x2="-4.4196" y2="-0.5588" width="0.381" layer="21"/>
 <pad name="1" x="-2.54" y="-1.27" drill="1.016" diameter="1.8796"/>
 <pad name="2" x="-2.54" y="1.27" drill="1.016" diameter="1.8796"/>
 <pad name="3" x="0" y="-1.27" drill="1.016" diameter="1.8796"/>
@@ -1188,8 +1190,8 @@ part number 2062-2P from STA</description>
 <rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
-<text x="-3.81" y="2.667" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-3.81" y="-3.937" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-1.016" y="2.9718" size="0.7112" layer="25" ratio="20">&gt;NAME</text>
+<text x="-0.7874" y="-3.6576" size="0.7112" layer="27" ratio="20">&gt;VALUE</text>
 </package>
 <package name="2X3_SMD">
 <description>&lt;h3&gt;Surface Mount - 2x3&lt;/h3&gt;
@@ -1342,7 +1344,7 @@ No electrical connections.
 <text x="2.54" y="3.937" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="2.54" y="-4.572" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="AUDIO_JACK_3.5MM_TRRS_SMD_RA">
+<package name="AUDIO_JACK_3.5MM_TRRS_SMD_RA" urn="urn:adsk.eagle:footprint:18169775/1" locally_modified="yes">
 <description>&lt;h3&gt;TRRS 3.5MM Right Angle Stereo Jack - SMT&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
@@ -1362,17 +1364,17 @@ No electrical connections.
 <wire x1="0" y1="2.8" x2="-2" y2="2.8" width="0.254" layer="51"/>
 <wire x1="-2" y1="2.8" x2="-2" y2="-2.8" width="0.254" layer="51"/>
 <wire x1="-2" y1="-2.8" x2="0" y2="-2.8" width="0.254" layer="51"/>
+<wire x1="7" y1="3.3" x2="9.4" y2="3.3" width="0.254" layer="21"/>
+<wire x1="4" y1="3.3" x2="5.4" y2="3.3" width="0.254" layer="21"/>
+<wire x1="0.5" y1="3.3" x2="2.4" y2="3.3" width="0.254" layer="21"/>
 <smd name="LEFT" x="10.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
 <smd name="GND/MIC" x="11.3" y="-3.25" dx="1.2" dy="2.5" layer="1"/>
 <smd name="RIGHT" x="6.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
 <smd name="GND" x="3.2" y="3.25" dx="1.2" dy="2.5" layer="1" rot="R180"/>
 <hole x="1.6" y="0" drill="1.2"/>
 <hole x="8.6" y="0" drill="1.2"/>
-<wire x1="7" y1="3.3" x2="9.4" y2="3.3" width="0.254" layer="21"/>
-<wire x1="4" y1="3.3" x2="5.4" y2="3.3" width="0.254" layer="21"/>
-<wire x1="0.5" y1="3.3" x2="2.4" y2="3.3" width="0.254" layer="21"/>
-<text x="3.175" y="0.127" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="3.175" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="3.175" y="0.127" size="0.7112" layer="25" ratio="20">&gt;NAME</text>
+<text x="3.175" y="-1.397" size="0.7112" layer="27" ratio="20">&gt;VALUE</text>
 </package>
 <package name="BANANA_CONN">
 <description>&lt;h3&gt;Banana Plug PTH&lt;/h3&gt;
@@ -1615,7 +1617,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <text x="-1.3462" y="0.4572" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.7018" y="-0.9652" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="2X5-PTH-1.27MM">
+<package name="2X5-PTH-1.27MM" urn="urn:adsk.eagle:footprint:18579096/1">
 <description>&lt;h3&gt;Plated Through Hole - 2x5 ARM Cortex Debug Connector (10-pin)&lt;/h3&gt;
 &lt;p&gt;tDoc (51) layer border represents maximum dimensions of plastic housing.&lt;/p&gt;
 &lt;p&gt;Specifications:
@@ -1641,8 +1643,8 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <wire x1="-3.175" y1="1.715" x2="-3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.127" layer="51"/>
-<text x="-1.5748" y="1.9304" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.8288" y="-2.4638" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-1.8288" y="2.0574" size="0.7112" layer="25" ratio="20">&gt;NAME</text>
+<text x="-1.9558" y="-2.7178" size="0.7112" layer="27" ratio="20">&gt;VALUE</text>
 </package>
 <package name="2X5">
 <description>&lt;h3&gt;Plated Through Hole - 2x5&lt;/h3&gt;
@@ -8318,6 +8320,47 @@ Description:
 <packageinstance name="MICROSD"/>
 </packageinstances>
 </package3d>
+<package3d name="2X3-NS" urn="urn:adsk.eagle:package:18167648/2" type="model">
+<description>&lt;h3&gt;Plated Through Hole - 2x3 No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03x2&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="2X3-NS"/>
+</packageinstances>
+</package3d>
+<package3d name="AUDIO_JACK_3.5MM_TRRS_SMD_RA" urn="urn:adsk.eagle:package:18169774/2" type="model">
+<description>&lt;h3&gt;TRRS 3.5MM Right Angle Stereo Jack - SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://cdn.sparkfun.com/datasheets/Prototyping/20153.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;AUDIO_JACK_TRRS&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="AUDIO_JACK_3.5MM_TRRS_SMD_RA"/>
+</packageinstances>
+</package3d>
+<package3d name="2X5-PTH-1.27MM" urn="urn:adsk.eagle:package:18579095/2" type="model">
+<description>&lt;h3&gt;Plated Through Hole - 2x5 ARM Cortex Debug Connector (10-pin)&lt;/h3&gt;
+&lt;p&gt;tDoc (51) layer border represents maximum dimensions of plastic housing.&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:10&lt;/li&gt;
+&lt;li&gt;Pin pitch:1.27mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://portal.fciconnect.com/Comergent//fci/drawing/20021111.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_05x2&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="2X5-PTH-1.27MM"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="USB-B-MICRO-SMD_V01">
@@ -9635,6 +9678,9 @@ Description:
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18167648/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9766,7 +9812,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO_JACK_TRRS" prefix="J">
+<deviceset name="AUDIO_JACK_TRRS" prefix="J" uservalue="yes">
 <description>&lt;h3&gt;Audio Jack - 3.5mm TRRS (SMD)&lt;/h3&gt;
 &lt;p&gt;This is a 3.5mm TRRS SMD audio jack. 
 &lt;br&gt;TRRS connectors are the audio-style connectors that you see on some phones, MP3 players and development boards. 
@@ -9787,6 +9833,9 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <connect gate="G$1" pin="SLEEVE" pad="GND/MIC"/>
 <connect gate="G$1" pin="TIP" pad="LEFT"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18169774/2"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-10676" constant="no"/>
@@ -9910,6 +9959,9 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18167648/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -10013,6 +10065,9 @@ PTH and SMD connector options available.&lt;/p&gt;
 <connect gate="G$1" pin="SWO/TDO" pad="6"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18579095/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -11560,6 +11615,9 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18167648/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
