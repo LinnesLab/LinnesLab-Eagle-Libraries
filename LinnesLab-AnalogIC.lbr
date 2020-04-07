@@ -574,6 +574,20 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 <text x="-1.6" y="1.2" size="0.7112" layer="25">&gt;Name</text>
 <text x="-1.6" y="-2" size="0.7112" layer="27">&gt;Value</text>
 </package>
+<package name="HVSOF5">
+<smd name="5" x="0.675" y="0.5" dx="0.35" dy="0.2" layer="1"/>
+<smd name="4" x="0.675" y="-0.5" dx="0.35" dy="0.2" layer="1"/>
+<smd name="1" x="-0.675" y="0.5" dx="0.35" dy="0.2" layer="1"/>
+<smd name="3" x="-0.675" y="-0.5" dx="0.35" dy="0.2" layer="1"/>
+<smd name="2" x="-0.08" y="0" dx="1.525" dy="0.2" layer="1"/>
+<wire x1="-0.6" y1="0.8" x2="0.6" y2="0.8" width="0.03" layer="21"/>
+<wire x1="0.6" y1="0.8" x2="0.6" y2="-0.8" width="0.03" layer="51"/>
+<wire x1="0.6" y1="-0.8" x2="-0.6" y2="-0.8" width="0.03" layer="21"/>
+<wire x1="-0.6" y1="-0.8" x2="-0.6" y2="0.8" width="0.03" layer="51"/>
+<circle x="-0.2794" y="0.6604" radius="0.091578125" width="0.03" layer="21"/>
+<text x="-1.524" y="0.9906" size="0.7112" layer="25">&gt;Name</text>
+<text x="-1.524" y="-1.651" size="0.7112" layer="27">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL08-400" urn="urn:adsk.eagle:package:4487/1" type="box">
@@ -852,17 +866,21 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011-1.pdf</description>
 </symbol>
 <symbol name="OPAMP-S">
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="0" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="0" y1="-2.54" x2="5.08" y2="0" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
 <wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
 <text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
 <pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
 <pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="EN" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="ENABLE" x="2.54" y="-5.08" visible="pad" length="point" rot="R180"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="0" y="-2.54" size="0.635" layer="97">EN</text>
 </symbol>
 <symbol name="S.PWR+-">
 <text x="1.27" y="6.35" size="1.778" layer="95">&gt;NAME</text>
@@ -1118,6 +1136,18 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </technologies>
 </device>
 <device name="R" package="SOT23-5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name=".BU7205SHFV" package="HVSOF5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="1"/>
+<connect gate="G$1" pin="-IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$2" pin="V+" pad="5"/>
+<connect gate="G$2" pin="V-" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1402,6 +1432,26 @@ Source: AV02-0886EN+DS+HCNR200+10Dec2011.pdf</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:18427742/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BU7205SHFV-TR" prefix="U">
+<gates>
+<gate name="G$1" symbol="OPAMP" x="0" y="0"/>
+<gate name="G$2" symbol="PWR+-" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name=".HVSOF5" package="HVSOF5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="1"/>
+<connect gate="G$1" pin="-IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$2" pin="V+" pad="5"/>
+<connect gate="G$2" pin="V-" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
