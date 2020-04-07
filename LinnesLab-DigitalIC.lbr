@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1177,7 +1177,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <text x="-2.54" y="5.08" size="0.7112" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="0.7112" layer="27">&gt;VALUE</text>
 </package>
-<package name="SSOP28" urn="urn:adsk.eagle:footprint:3793/1" locally_modified="yes">
+<package name="SSOP28" urn="urn:adsk.eagle:footprint:18976608/1">
 <description>&lt;b&gt;28-Lead Shrink Small Outline Package SSOP&lt;/b&gt; (RS-28)&lt;p&gt;
 Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</description>
 <wire x1="-2.6" y1="5.1" x2="-2.6" y2="-5.1" width="0.2032" layer="21"/>
@@ -1276,6 +1276,13 @@ Source: 8x ADG1408_1409.pdf</description>
 Source: &lt;a href="http://datasheets.maxim-ic.com/en/ds/MAX8559.pdf"&gt; Data sheet &lt;/a&gt;</description>
 <packageinstances>
 <packageinstance name="TDFN8-3X3MM"/>
+</packageinstances>
+</package3d>
+<package3d name="SSOP28" urn="urn:adsk.eagle:package:18976606/2" type="model">
+<description>&lt;b&gt;28-Lead Shrink Small Outline Package SSOP&lt;/b&gt; (RS-28)&lt;p&gt;
+Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</description>
+<packageinstances>
+<packageinstance name="SSOP28"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2788,6 +2795,9 @@ Op. Temp: -40~85°C</text>
 <connect gate="G$1" pin="XTAL1/CLKIN" pad="19"/>
 <connect gate="G$1" pin="XTAL2" pad="18"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18976606/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
