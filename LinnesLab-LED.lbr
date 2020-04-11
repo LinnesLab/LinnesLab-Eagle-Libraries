@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -555,8 +555,8 @@
 <wire x1="-0.2" y1="0.1" x2="-0.4" y2="0.1" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="0.1" x2="-0.4" y2="0.2" width="0.127" layer="21"/>
 <wire x1="-0.4" y1="0.2" x2="-0.3" y2="0.2" width="0.127" layer="21"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;Name</text>
-<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;Value</text>
+<text x="-1.27" y="0.635" size="0.7112" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.27" size="0.7112" layer="27">&gt;Value</text>
 </package>
 <package name="LED-0805" urn="urn:adsk.eagle:footprint:15674/1" locally_modified="yes">
 <description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;

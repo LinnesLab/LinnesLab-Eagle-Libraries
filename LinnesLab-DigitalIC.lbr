@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -723,8 +723,8 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <smd name="10" x="2.2" y="1" dx="1.45" dy="0.3" layer="1"/>
 <smd name="7" x="2.2" y="-0.5" dx="1.45" dy="0.3" layer="1"/>
 <smd name="6" x="2.2" y="-1" dx="1.45" dy="0.3" layer="1"/>
-<text x="-2.9" y="1.8" size="1.27" layer="25">&gt;Name</text>
-<text x="-3" y="-3" size="1.27" layer="27">&gt;Value</text>
+<text x="-1.63" y="1.8" size="0.7112" layer="25">&gt;Name</text>
+<text x="-1.73" y="-2.54" size="0.7112" layer="27">&gt;Value</text>
 <circle x="-1" y="1" radius="0.360553125" width="0.127" layer="21"/>
 </package>
 <package name="DIL16" urn="urn:adsk.eagle:footprint:917/1">
@@ -1217,6 +1217,29 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <smd name="27" x="3.5" y="3.575" dx="1.85" dy="0.45" layer="1" rot="R180"/>
 <smd name="28" x="3.5" y="4.225" dx="1.85" dy="0.45" layer="1" rot="R180"/>
 <circle x="-1.728" y="4.368" radius="0.379471875" width="0.127" layer="21"/>
+</package>
+<package name="10-X2QFN(2X1.5)">
+<smd name="3" x="-0.64" y="-0.25" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="2" x="-0.64" y="0.25" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="1" x="-0.64" y="0.75" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="4" x="-0.64" y="-0.75" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="7" x="0.64" y="-0.25" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="8" x="0.64" y="0.25" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="9" x="0.64" y="0.75" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="6" x="0.64" y="-0.75" dx="0.58" dy="0.3" layer="1" rot="R180"/>
+<smd name="5" x="0" y="-0.86" dx="0.63" dy="0.35" layer="1" rot="R270"/>
+<smd name="10" x="0" y="0.86" dx="0.63" dy="0.35" layer="1" rot="R270"/>
+<wire x1="-0.75" y1="1" x2="0.75" y2="1" width="0.127" layer="51"/>
+<wire x1="0.75" y1="1" x2="0.75" y2="-1" width="0.127" layer="51"/>
+<wire x1="0.75" y1="-1" x2="-0.75" y2="-1" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-1" x2="-0.75" y2="1" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="1" x2="-0.75" y2="1" width="0.127" layer="21"/>
+<wire x1="0.3" y1="1" x2="0.75" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.75" y1="-1" x2="-0.3" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.3" y1="-1" x2="0.75" y2="-1" width="0.127" layer="21"/>
+<circle x="-0.7" y="1.1" radius="0.1" width="0.127" layer="21"/>
+<text x="-1.27" y="1.27" size="0.7112" layer="25">&gt;Name</text>
+<text x="-1.27" y="-1.905" size="0.7112" layer="27">&gt;Value</text>
 </package>
 </packages>
 <packages3d>
@@ -1819,8 +1842,8 @@ Op. Temp: -40~85°C</text>
 <wire x1="7.62" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="MCP44XX">
-<text x="-12.7" y="21.59" size="2.032" layer="95">&gt;Name</text>
-<text x="-12.7" y="-22.86" size="2.032" layer="96">&gt;Value</text>
+<text x="-12.7" y="21.59" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;Value</text>
 <wire x1="-1.778" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="-3.302" y1="2.54" x2="-3.302" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.778" y1="-2.54" x2="-1.778" y2="2.54" width="0.254" layer="94"/>
@@ -1953,8 +1976,8 @@ Op. Temp: -40~85°C</text>
 </symbol>
 <symbol name="ADS1256">
 <wire x1="0" y1="53.34" x2="0" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="73.66" y2="0" width="0.1524" layer="94"/>
-<wire x1="73.66" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="76.2" y2="0" width="0.1524" layer="94"/>
+<wire x1="76.2" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="73.66" y1="10.16" x2="73.66" y2="25.4" width="0.1524" layer="94"/>
 <wire x1="73.66" y1="25.4" x2="55.88" y2="25.4" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="15.24" x2="2.54" y2="40.64" width="0.1524" layer="94"/>
@@ -2008,14 +2031,30 @@ Op. Temp: -40~85°C</text>
 <wire x1="48.26" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="94"/>
 <wire x1="38.1" y1="22.86" x2="33.02" y2="27.94" width="0.1524" layer="94"/>
 <wire x1="33.02" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="94"/>
-<wire x1="40.64" y1="40.64" x2="40.64" y2="33.02" width="0.1524" layer="94"/>
-<wire x1="45.72" y1="40.64" x2="45.72" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="40.64" y1="43.18" x2="40.64" y2="33.02" width="0.1524" layer="94"/>
+<wire x1="45.72" y1="43.18" x2="45.72" y2="33.02" width="0.1524" layer="94"/>
 <text x="38.1" y="27.94" size="1.524" layer="94">Modulator</text>
 <pin name="!RESET" x="78.74" y="38.1" length="middle" rot="R180"/>
 <pin name="!SYNC/PDWN" x="78.74" y="35.56" length="middle" rot="R180"/>
-<wire x1="73.66" y1="53.34" x2="76.2" y2="53.34" width="0.254" layer="94"/>
-<wire x1="76.2" y1="53.34" x2="76.2" y2="0" width="0.254" layer="94"/>
-<wire x1="76.2" y1="0" x2="73.66" y2="0" width="0.254" layer="94"/>
+<wire x1="76.2" y1="53.34" x2="76.2" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="ADS1118">
+<wire x1="-10.16" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="SCLK" x="-12.7" y="5.08" length="short"/>
+<pin name="!CS" x="-12.7" y="2.54" length="short"/>
+<pin name="GND" x="-12.7" y="0" length="short"/>
+<pin name="AIN0" x="-12.7" y="-2.54" length="short"/>
+<pin name="AIN1" x="-12.7" y="-5.08" length="short"/>
+<pin name="AIN2" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="AIN3" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="VDD" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="MISO/!DRDY" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="MOSI" x="15.24" y="5.08" length="short" rot="R180"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2798,6 +2837,47 @@ Op. Temp: -40~85°C</text>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:18976606/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS1118" prefix="U">
+<gates>
+<gate name="G$1" symbol="ADS1118" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-VSSOP" package="10-VSSOP">
+<connects>
+<connect gate="G$1" pin="!CS" pad="2"/>
+<connect gate="G$1" pin="AIN0" pad="4"/>
+<connect gate="G$1" pin="AIN1" pad="5"/>
+<connect gate="G$1" pin="AIN2" pad="6"/>
+<connect gate="G$1" pin="AIN3" pad="7"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="MISO/!DRDY" pad="9"/>
+<connect gate="G$1" pin="MOSI" pad="10"/>
+<connect gate="G$1" pin="SCLK" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-X2QFN" package="10-X2QFN(2X1.5)">
+<connects>
+<connect gate="G$1" pin="!CS" pad="2"/>
+<connect gate="G$1" pin="AIN0" pad="4"/>
+<connect gate="G$1" pin="AIN1" pad="5"/>
+<connect gate="G$1" pin="AIN2" pad="6"/>
+<connect gate="G$1" pin="AIN3" pad="7"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="MISO/!DRDY" pad="9"/>
+<connect gate="G$1" pin="MOSI" pad="10"/>
+<connect gate="G$1" pin="SCLK" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
