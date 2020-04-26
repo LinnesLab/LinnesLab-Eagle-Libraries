@@ -901,7 +901,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH.MOM">
+<deviceset name="SWITCH.MOM" prefix="SW">
 <description>PTS645SM43SMTR92 LFS</description>
 <gates>
 <gate name="G$1" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
