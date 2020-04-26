@@ -10201,7 +10201,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="FIDUCIAL">
+<deviceset name="FIDUCIAL" prefix="FD">
 <description>For use by pick and place machines to calibrate the vision/machine, 1mm
 &lt;p&gt;By microbuilder.eu&lt;/p&gt;</description>
 <gates>

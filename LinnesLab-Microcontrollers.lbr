@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2314,19 +2314,19 @@ No mounting holes, no silk labels on pins.
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;Arduino Uno R3 Shield ICSP&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-24.13" y1="-30.48" x2="-17.17" y2="-30.48" width="0.254" layer="20"/>
-<wire x1="-17.17" y1="-30.48" x2="-4.97" y2="-30.48" width="0.254" layer="20"/>
-<wire x1="-4.97" y1="-30.48" x2="24.13" y2="-30.48" width="0.254" layer="20"/>
-<wire x1="24.13" y1="-30.48" x2="26.67" y2="-27.94" width="0.254" layer="20"/>
-<wire x1="26.67" y1="26.67" x2="24.13" y2="26.67" width="0.254" layer="20"/>
-<wire x1="24.13" y1="26.67" x2="21.59" y2="29.21" width="0.254" layer="20"/>
-<wire x1="-26.67" y1="25.4" x2="-26.67" y2="-27.94" width="0.254" layer="20"/>
-<wire x1="-26.67" y1="-27.94" x2="-24.13" y2="-30.48" width="0.254" layer="20"/>
-<wire x1="21.59" y1="29.21" x2="-11.43" y2="29.21" width="0.254" layer="20"/>
-<wire x1="-11.43" y1="29.21" x2="-13.97" y2="26.67" width="0.254" layer="20"/>
-<wire x1="-13.97" y1="26.67" x2="-25.4" y2="26.67" width="0.254" layer="20"/>
-<wire x1="-25.4" y1="26.67" x2="-26.67" y2="25.4" width="0.254" layer="20"/>
-<wire x1="26.67" y1="-27.94" x2="26.67" y2="26.67" width="0.254" layer="20"/>
+<wire x1="-24.13" y1="-30.48" x2="-17.17" y2="-30.48" width="0" layer="20"/>
+<wire x1="-17.17" y1="-30.48" x2="-4.97" y2="-30.48" width="0" layer="20"/>
+<wire x1="-4.97" y1="-30.48" x2="24.13" y2="-30.48" width="0" layer="20"/>
+<wire x1="24.13" y1="-30.48" x2="26.67" y2="-27.94" width="0" layer="20"/>
+<wire x1="26.67" y1="26.67" x2="24.13" y2="26.67" width="0" layer="20"/>
+<wire x1="24.13" y1="26.67" x2="21.59" y2="29.21" width="0" layer="20"/>
+<wire x1="-26.67" y1="25.4" x2="-26.67" y2="-27.94" width="0" layer="20"/>
+<wire x1="-26.67" y1="-27.94" x2="-24.13" y2="-30.48" width="0" layer="20"/>
+<wire x1="21.59" y1="29.21" x2="-11.43" y2="29.21" width="0" layer="20"/>
+<wire x1="-11.43" y1="29.21" x2="-13.97" y2="26.67" width="0" layer="20"/>
+<wire x1="-13.97" y1="26.67" x2="-25.4" y2="26.67" width="0" layer="20"/>
+<wire x1="-25.4" y1="26.67" x2="-26.67" y2="25.4" width="0" layer="20"/>
+<wire x1="26.67" y1="-27.94" x2="26.67" y2="26.67" width="0" layer="20"/>
 <wire x1="-17.17" y1="-45.98" x2="-4.97" y2="-45.98" width="0.254" layer="51"/>
 <wire x1="13.53" y1="-40.78" x2="22.53" y2="-40.78" width="0.254" layer="51"/>
 <wire x1="-17.17" y1="-45.98" x2="-17.17" y2="-30.48" width="0.254" layer="51"/>

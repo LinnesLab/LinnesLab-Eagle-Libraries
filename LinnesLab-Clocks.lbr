@@ -535,7 +535,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL" prefix="XTAL" uservalue="yes">
+<deviceset name="CRYSTAL" prefix="Y" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>

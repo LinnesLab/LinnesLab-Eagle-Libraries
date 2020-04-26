@@ -1270,10 +1270,18 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
 <attribute name="MF" value="" constant="no"/>
 <attribute name="MPN" value="AD8607ARMZ-R2" constant="no"/>
 <attribute name="OC_FARNELL" value="1651293" constant="no"/>
 <attribute name="OC_NEWARK" value="19M8927" constant="no"/>
+</technology>
+<technology name="MCP6002">
+<attribute name="DIGIKEY" value="MCP6002T-I/SNCT-ND"/>
+<attribute name="MF" value="Microchip Technology" constant="no"/>
+<attribute name="MPN" value="MCP6002T-I/SN"/>
+<attribute name="OC_FARNELL" value="" constant="no"/>
+<attribute name="OC_NEWARK" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
