@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -212,7 +212,7 @@
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="SOT23-5" urn="urn:adsk.eagle:footprint:15662428/1" locally_modified="yes">
+<package name="SOT23-5" urn="urn:adsk.eagle:footprint:15662428/1">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
 <wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
@@ -264,6 +264,12 @@
 <smd name="1" x="-0.325" y="-0.5" dx="0.25" dy="0.3" layer="1"/>
 <smd name="3" x="0.325" y="0.5" dx="0.25" dy="0.3" layer="1"/>
 <smd name="2" x="0.325" y="-0.5" dx="0.25" dy="0.3" layer="1"/>
+<wire x1="-0.5334" y1="0.762" x2="0.5588" y2="0.762" width="0.127" layer="21"/>
+<wire x1="0.5588" y1="0.762" x2="0.5588" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="0.5588" y1="-0.762" x2="-0.5588" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-0.5588" y1="-0.762" x2="-0.5588" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-0.7366" y1="-0.2794" x2="-0.7366" y2="-0.9398" width="0.127" layer="21"/>
+<wire x1="-0.7366" y1="-0.9398" x2="-0.0508" y2="-0.9398" width="0.127" layer="21"/>
 </package>
 <package name="SC-70-6">
 <smd name="5" x="0" y="1.17" dx="0.35" dy="0.85" layer="1"/>
@@ -1132,6 +1138,12 @@ part number 2062-2P from STA</description>
 <packageinstance name="DFN-8-2X3MM"/>
 </packageinstances>
 </package3d>
+<package3d name="SOT23-5" urn="urn:adsk.eagle:package:15662427/2" type="model">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SOT23-5"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="78XX-1">
@@ -1887,6 +1899,54 @@ part number 2062-2P from STA</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:18172171/2"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC550X" prefix="LDO">
+<description>&lt;h3&gt;MIC5504 Voltage Regulator&lt;/h3&gt;
+&lt;p&gt;
+
+&lt;ul&gt;
+
+&lt;li&gt;Output Voltages: 1.0V to 3.3V&lt;/li&gt;
+&lt;li&gt;Input Voltages: 2.5V to 5.5V&lt;/li&gt;
+
+
+
+&lt;/ul&gt;
+
+Link to Datasheet
+&lt;ul&gt;
+http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC5504" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:15662427/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TDFN-4" package="TDFN-4">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 PAD"/>
+<connect gate="G$1" pin="IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

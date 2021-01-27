@@ -2151,6 +2151,32 @@ Physcial Characteristics
 <text x="-1.7" y="2.159" size="0.7112" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.7" y="-2.794" size="0.7112" layer="27" ratio="12">&gt;VALUE</text>
 </package>
+<package name="10-SMD">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="2" x="-1.5" y="0" dx="0.9" dy="0.38" layer="1"/>
+<smd name="1" x="-1.5" y="0.65" dx="0.9" dy="0.38" layer="1"/>
+<smd name="3" x="-1.5" y="-0.65" dx="0.9" dy="0.38" layer="1"/>
+<smd name="6" x="1.5" y="-0.65" dx="0.9" dy="0.38" layer="1"/>
+<smd name="7" x="1.5" y="0" dx="0.9" dy="0.38" layer="1"/>
+<smd name="8" x="1.5" y="0.65" dx="0.9" dy="0.38" layer="1"/>
+<smd name="4" x="-0.835" y="-1.5" dx="0.9" dy="0.38" layer="1" rot="R90"/>
+<smd name="5" x="0.835" y="-1.5" dx="0.9" dy="0.38" layer="1" rot="R90"/>
+<smd name="10" x="-0.835" y="1.5" dx="0.9" dy="0.38" layer="1" rot="R90"/>
+<smd name="9" x="0.835" y="1.5" dx="0.9" dy="0.38" layer="1" rot="R90"/>
+<text x="-3.34" y="2.505" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.34" y="-3.34" size="1.27" layer="27">&gt;Value</text>
+<wire x1="-1.2" y1="1.6" x2="-1.6" y2="1.6" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="1.6" x2="-1.6" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.7" x2="-1.7" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="1.7" x2="-1.7" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.8" x2="-1.8" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="1.8" x2="-1.8" y2="1" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="1.9" x2="-1.9" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="1.9" x2="-1.9" y2="1" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="14-LGA" urn="urn:adsk.eagle:package:15664778/2" type="model">
@@ -3289,6 +3315,15 @@ On-Chip Temparetur Compensated &amp; Calibrated Silicon Pressure Sensor</descrip
 <technology name=""/>
 </technologies>
 </device>
+<device name="AK9710ADF01" package="10-SMD">
+<connects>
+<connect gate="G$1" pin="A" pad="1 2 3 4 10"/>
+<connect gate="G$1" pin="C" pad="5 6 7 8 9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SFH7060">
@@ -3863,6 +3898,22 @@ interface settings to easily fit to customer applications.&lt;/p&gt;</descriptio
 <connect gate="G$1" pin="SDO" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="16"/>
 <connect gate="G$1" pin="VDDIO" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AK9710ADF01" prefix="PD" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="PHOTODIODE" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="10-SMD">
+<connects>
+<connect gate="G$1" pin="A" pad="1 2 3 4 10"/>
+<connect gate="G$1" pin="C" pad="5 6 7 8 9"/>
 </connects>
 <technologies>
 <technology name=""/>
