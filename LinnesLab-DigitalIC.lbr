@@ -2321,6 +2321,24 @@ Op. Temp: -40~85°C</text>
 <text x="5.08" y="10.16" size="1.016" layer="97">Precision
 ADC</text>
 </symbol>
+<symbol name="TMUX1104-SIMPLE">
+<pin name="EN" x="-38.1" y="22.86" length="middle"/>
+<pin name="VDD" x="-12.7" y="22.86" length="middle" rot="R180"/>
+<pin name="A0\" x="-12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="GND" x="-12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="A1" x="-12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="S2" x="-38.1" y="12.7" length="middle"/>
+<pin name="S1" x="-38.1" y="17.78" length="middle"/>
+<pin name="S3" x="-38.1" y="7.62" length="middle"/>
+<pin name="S4" x="-38.1" y="2.54" length="middle"/>
+<text x="-33.02" y="25.4" size="1.778" layer="95">&gt;NAME</text>
+<text x="-33.02" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="D" x="-12.7" y="17.78" length="middle" rot="R180"/>
+<wire x1="-33.02" y1="25.4" x2="-33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="0" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="25.4" x2="-33.02" y2="25.4" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NTS0104PW,118" prefix="U" uservalue="yes">
@@ -3277,6 +3295,30 @@ FT24C64A-ELR-T</description>
 <deviceset name="TMUX1104">
 <gates>
 <gate name="G$1" symbol="TMUX1104" x="10.16" y="-10.16"/>
+</gates>
+<devices>
+<device name="" package="USON">
+<connects>
+<connect gate="G$1" pin="A0\" pad="1"/>
+<connect gate="G$1" pin="A1" pad="10"/>
+<connect gate="G$1" pin="D" pad="8"/>
+<connect gate="G$1" pin="EN" pad="5"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="S1" pad="2"/>
+<connect gate="G$1" pin="S2" pad="9"/>
+<connect gate="G$1" pin="S3" pad="4"/>
+<connect gate="G$1" pin="S4" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMUX1104-SIMPLE">
+<gates>
+<gate name="G$1" symbol="TMUX1104-SIMPLE" x="25.4" y="-12.7"/>
 </gates>
 <devices>
 <device name="" package="USON">
