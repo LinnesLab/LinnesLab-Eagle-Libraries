@@ -2333,7 +2333,7 @@ Physcial Characteristics
 <text x="0" y="2.794" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
 </symbol>
-<symbol name="ADPS9008">
+<symbol name="APDS-9008">
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -3180,9 +3180,9 @@ On-Chip Temparetur Compensated &amp; Calibrated Silicon Pressure Sensor</descrip
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADPS9008">
+<deviceset name="APDS-9008">
 <gates>
-<gate name="G$1" symbol="ADPS9008" x="0" y="0"/>
+<gate name="G$1" symbol="APDS-9008" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="6-PIN.CHIPLED">
