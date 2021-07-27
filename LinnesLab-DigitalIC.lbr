@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -592,20 +592,20 @@ Source: 8x ADG1408_1409.pdf</description>
 <wire x1="-4.3307" y1="1.9558" x2="-3.2512" y2="1.9558" width="0.2032" layer="21"/>
 <wire x1="3.2512" y1="1.9558" x2="4.3307" y2="1.9558" width="0.2032" layer="21"/>
 </package>
-<package name="SC-70-6">
-<smd name="P1" x="-1.176" y="0.611" dx="0.85" dy="0.35" layer="1"/>
-<smd name="P3" x="-1.176" y="-0.689" dx="0.85" dy="0.35" layer="1"/>
-<smd name="P2" x="-1.18" y="-0.038" dx="0.85" dy="0.35" layer="1"/>
-<smd name="P6" x="1.172" y="0.611" dx="0.85" dy="0.35" layer="1"/>
-<smd name="P4" x="1.172" y="-0.689" dx="0.85" dy="0.35" layer="1"/>
-<smd name="P5" x="1.168" y="-0.038" dx="0.85" dy="0.35" layer="1"/>
-<wire x1="-0.621" y1="0.944" x2="-0.621" y2="-1.073" width="0.05" layer="21"/>
-<wire x1="-0.621" y1="-1.073" x2="0.614" y2="-1.073" width="0.05" layer="21"/>
-<wire x1="0.614" y1="-1.073" x2="0.614" y2="0.953" width="0.05" layer="21"/>
-<wire x1="0.614" y1="0.953" x2="-0.621" y2="0.953" width="0.05" layer="21"/>
-<circle x="-0.3937" y="0.6096" radius="0" width="0.254" layer="21"/>
-<text x="-1.27" y="1.27" size="0.508" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-1.905" size="0.508" layer="27">&gt;VALUE</text>
+<package name="SC-70-6" urn="urn:adsk.eagle:footprint:30066376/4">
+<smd name="1" x="-1.1684" y="0.6096" dx="0.85" dy="0.35" layer="1"/>
+<smd name="2" x="-1.1684" y="-0.0381" dx="0.85" dy="0.35" layer="1"/>
+<smd name="3" x="-1.1684" y="-0.6858" dx="0.85" dy="0.35" layer="1"/>
+<smd name="4" x="1.1684" y="-0.6858" dx="0.85" dy="0.35" layer="1"/>
+<smd name="5" x="1.1684" y="-0.0381" dx="0.85" dy="0.35" layer="1"/>
+<smd name="6" x="1.1684" y="0.6096" dx="0.85" dy="0.35" layer="1"/>
+<wire x1="-0.621" y1="-1.073" x2="0.614" y2="-1.073" width="0.05" layer="51"/>
+<wire x1="0.614" y1="0.953" x2="-0.621" y2="0.953" width="0.05" layer="51"/>
+<wire x1="-0.621" y1="0.944" x2="-0.621" y2="-1.073" width="0.05" layer="51"/>
+<wire x1="0.614" y1="-1.073" x2="0.614" y2="0.943953125" width="0.05" layer="51"/>
+<text x="-1.202771875" y="1.393259375" size="0.6096" layer="25" ratio="6">&gt;Name</text>
+<text x="-1.23863125" y="-1.893590625" size="0.6096" layer="27" ratio="6">&gt;Value</text>
+<circle x="-0.3898875" y="0.7235875" radius="0.014296875" width="0.1524" layer="21"/>
 </package>
 <package name="MSOP10">
 <description>&lt;b&gt;10 Lead Platic MSOP&lt;/b&gt;&lt;p&gt;
@@ -1297,7 +1297,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <text x="-3.81" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
 <circle x="-5.715" y="-2.54" radius="0.127" width="0.254" layer="21"/>
 </package>
-<package name="10-XQFN(1.55X2)">
+<package name="10-XQFN(1.55X2)" urn="urn:adsk.eagle:footprint:30066383/1">
 <wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.127" layer="21"/>
 <wire x1="0.8" y1="1" x2="0.8" y2="-1" width="0.127" layer="21"/>
 <wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.127" layer="21"/>
@@ -1315,7 +1315,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;Name</text>
 <text x="0" y="-1.905" size="1.27" layer="27" align="center">&gt;Value</text>
 </package>
-<package name="USON">
+<package name="USON" urn="urn:adsk.eagle:footprint:30066384/1">
 <wire x1="-0.5" y1="1.25" x2="0.5" y2="1.25" width="0.0762" layer="21"/>
 <wire x1="0.5" y1="1.25" x2="0.5" y2="-1.25" width="0.0762" layer="21"/>
 <wire x1="0.5" y1="-1.25" x2="-0.5" y2="-1.25" width="0.0762" layer="21"/>
@@ -1556,6 +1556,21 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF8574_4.pdf</description>
 <packageinstances>
 <packageinstance name="SSOP20"/>
+</packageinstances>
+</package3d>
+<package3d name="DBV0006A_N" urn="urn:adsk.eagle:package:30066388/5" type="model">
+<packageinstances>
+<packageinstance name="SC-70-6"/>
+</packageinstances>
+</package3d>
+<package3d name="USON" urn="urn:adsk.eagle:package:30066413/2" type="model">
+<packageinstances>
+<packageinstance name="USON"/>
+</packageinstances>
+</package3d>
+<package3d name="10-XQFN(1.55X2)" urn="urn:adsk.eagle:package:30066412/2" type="model">
+<packageinstances>
+<packageinstance name="10-XQFN(1.55X2)"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2546,6 +2561,24 @@ ADC</text>
 <pin name="SDA" x="15.24" y="10.16" length="middle" rot="R180"/>
 <pin name="VCC" x="15.24" y="12.7" length="middle" rot="R180"/>
 </symbol>
+<symbol name="TMUX1104-SIMPLE-1">
+<pin name="EN" x="-12.7" y="10.16" length="middle"/>
+<pin name="VDD" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="A0\" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="-10.16" length="middle" rot="R180"/>
+<pin name="A1" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="S2" x="-12.7" y="0" length="middle"/>
+<pin name="S1" x="-12.7" y="5.08" length="middle"/>
+<pin name="S3" x="-12.7" y="-5.08" length="middle"/>
+<pin name="S4" x="-12.7" y="-10.16" length="middle"/>
+<pin name="D" x="12.7" y="5.08" length="middle" rot="R180"/>
+<text x="-7.62" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NTS0104PW,118" prefix="U" uservalue="yes">
@@ -2811,26 +2844,6 @@ ADC</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DACX311" prefix="DAC" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="DAC5311" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SC-70-6">
-<connects>
-<connect gate="G$1" pin="CLK" pad="P2"/>
-<connect gate="G$1" pin="CS" pad="P1"/>
-<connect gate="G$1" pin="GND" pad="P5"/>
-<connect gate="G$1" pin="OUT" pad="P6"/>
-<connect gate="G$1" pin="SI" pad="P3"/>
-<connect gate="G$1" pin="VDD" pad="P4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DACX311_ALT" prefix="DAC">
 <gates>
 <gate name="G$1" symbol="DAC" x="0" y="0"/>
@@ -2838,13 +2851,16 @@ ADC</text>
 <devices>
 <device name="" package="SC-70-6">
 <connects>
-<connect gate="G$1" pin="CS" pad="P1"/>
-<connect gate="G$1" pin="GND" pad="P5"/>
-<connect gate="G$1" pin="OUT" pad="P6"/>
-<connect gate="G$1" pin="SCK" pad="P2"/>
-<connect gate="G$1" pin="SI" pad="P3"/>
-<connect gate="G$1" pin="VDD" pad="P4"/>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="SI" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30066388/5"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3493,6 +3509,9 @@ FT24C64A-ELR-T</description>
 <connect gate="G$1" pin="S1" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="10"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30066412/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3517,6 +3536,9 @@ FT24C64A-ELR-T</description>
 <connect gate="G$1" pin="S4" pad="7"/>
 <connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30066413/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3541,6 +3563,9 @@ FT24C64A-ELR-T</description>
 <connect gate="G$1" pin="S4" pad="7"/>
 <connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30066413/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -3689,6 +3714,42 @@ RETIRED IC-08153 (Also move to special)</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DACX311" prefix="U">
+<gates>
+<gate name="G$1" symbol="DAC5311" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC-70-6">
+<connects>
+<connect gate="G$1" pin="CLK" pad="2"/>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="SI" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30066388/5"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="ALTERNATEPARTNUMBER" value="TS5A3159DBVT" constant="no"/>
+<attribute name="APPLICATION_BUILDNUMBER" value="*" constant="no"/>
+<attribute name="COMPTYPE" value="IC" constant="no"/>
+<attribute name="MANUFACTURER" value="Texas Instruments" constant="no"/>
+<attribute name="MOUNTTYPE" value="SMT" constant="no"/>
+<attribute name="PACKAGEREFERENCE" value="DBV0006A" constant="no"/>
+<attribute name="PARTNUMBER" value="TS5A3159DBVR" constant="no"/>
+<attribute name="PIN_COUNT" value="6" constant="no"/>
+<attribute name="REFDES" value="RefDes" constant="no"/>
+<attribute name="ROHS" value="Y" constant="no"/>
+<attribute name="TYPE" value="TYPE" constant="no"/>
+<attribute name="VALUE" value="Value" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
