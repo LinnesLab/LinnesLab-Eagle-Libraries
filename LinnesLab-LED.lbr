@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -571,7 +571,7 @@
 <text x="-2.86" y="1.14" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.77" y="-2.48" size="1.27" layer="27">&gt;Value</text>
 </package>
-<package name="LED-0402">
+<package name="LED-0402" urn="urn:adsk.eagle:footprint:30065812/1">
 <smd name="C" x="-0.525" y="0" dx="0.4" dy="0.5" layer="1"/>
 <smd name="A" x="0.525" y="0" dx="0.4" dy="0.5" layer="1"/>
 <wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.1" layer="21"/>
@@ -664,6 +664,11 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 &lt;ul&gt;&lt;li&gt;LED - BLUE&lt;/li&gt;</description>
 <packageinstances>
 <packageinstance name="LED-0603"/>
+</packageinstances>
+</package3d>
+<package3d name="LED-0402" urn="urn:adsk.eagle:package:30065836/2" type="model">
+<packageinstances>
+<packageinstance name="LED-0402"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1043,6 +1048,9 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:30065836/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
