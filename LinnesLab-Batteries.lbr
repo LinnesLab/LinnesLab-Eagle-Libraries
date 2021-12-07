@@ -556,7 +556,7 @@ Battery Characteristics:
 </device>
 </devices>
 </deviceset>
-<deviceset name="BQ24168RGET" prefix="BQRGET" uservalue="yes">
+<deviceset name="BQ24168RGET" prefix="BQ241_" uservalue="yes">
 <description>EAGLE model of BQ24168RGET - multi-cell battery charger. Footprint taken from SnapEDA, Footprint made in-house. GND is connected to thermal pad through external vias (pins 25-30).</description>
 <gates>
 <gate name="G$1" symbol="BQ42618RGET" x="0" y="0"/>
@@ -595,7 +595,7 @@ Battery Characteristics:
 </device>
 </devices>
 </deviceset>
-<deviceset name="BQ77908ADBT" prefix="BQADBT" uservalue="yes">
+<deviceset name="BQ77908ADBT" prefix="BQ779_" uservalue="yes">
 <description>EAGLE Model of BQ77908ADBT - multi-cell balancing and protector for Li-Ion / Li-Po batteries. Symbol made in-house while footprint is taken from SnapEDA.</description>
 <gates>
 <gate name="G$1" symbol="BQ77908ADBT" x="0" y="0"/>
@@ -648,7 +648,7 @@ Battery Characteristics:
 </device>
 </devices>
 </deviceset>
-<deviceset name="BQ7692006PW" prefix="BQ769PW" uservalue="yes">
+<deviceset name="BQ7692006PW" prefix="BQ769P_" uservalue="yes">
 <description>EAGLE model of BQ7692006PW - multi-cell battery monitor. Symbol made in-house and footprint from SnapEDA.</description>
 <gates>
 <gate name="G$1" symbol="BQ7692006PW" x="0" y="0"/>
