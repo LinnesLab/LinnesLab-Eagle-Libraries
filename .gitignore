@@ -1,7 +1,13 @@
-#Ignoring all files in PCB_Designs directory except for .lbr files
-#This is done specifically to autosave files
-/*
-!*.lbr
-
 # Ignore Mac DS_Store files in all directories
 .DS_Store
+
+
+#Ignore EAGLE board, schematic, and library auto save files (.b#x, .s#x, and .l#x) in all directories
+*.b#?
+*.s#?
+*.l#?
+
+
+#Development file for making local changes to Arduino libraries
+#Ignore in all directories
+.development
