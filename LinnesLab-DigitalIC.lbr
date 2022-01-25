@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1466,6 +1466,45 @@ Source: http://www.semiconductors.philips.com/acrobat_download/datasheets/PCF857
 <text x="-5.08" y="2.54" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-5.08" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="8-LGA">
+<wire x1="-4" y1="3" x2="4" y2="3" width="0.127" layer="21"/>
+<wire x1="4" y1="3" x2="4" y2="-3" width="0.127" layer="21"/>
+<wire x1="4" y1="-3" x2="-4" y2="-3" width="0.127" layer="21"/>
+<wire x1="-4" y1="-3" x2="-4" y2="3" width="0.127" layer="21"/>
+<wire x1="-3.9878" y1="2.2606" x2="-3.2766" y2="2.2606" width="0.127" layer="21"/>
+<wire x1="-3.2766" y1="2.2606" x2="-3.2766" y2="2.9718" width="0.127" layer="21"/>
+<smd name="2" x="-3.4" y="0.635" dx="1.27" dy="0.5" layer="1"/>
+<smd name="1" x="-3.4" y="1.905" dx="1.27" dy="0.5" layer="1"/>
+<smd name="3" x="-3.4" y="-0.635" dx="1.27" dy="0.5" layer="1"/>
+<smd name="4" x="-3.4" y="-1.905" dx="1.27" dy="0.5" layer="1"/>
+<smd name="5" x="3.4" y="-1.905" dx="1.27" dy="0.5" layer="1"/>
+<smd name="6" x="3.4" y="-0.635" dx="1.27" dy="0.5" layer="1"/>
+<smd name="7" x="3.4" y="0.635" dx="1.27" dy="0.5" layer="1"/>
+<smd name="8" x="3.4" y="1.905" dx="1.27" dy="0.5" layer="1"/>
+<text x="-3.81" y="3.8608" size="0.7112" layer="25">&gt;Name</text>
+<text x="-3.81" y="-3.937" size="0.7112" layer="27">&gt;Value</text>
+<wire x1="-4.2926" y1="2.3368" x2="-4.2926" y2="3.3274" width="0.254" layer="21"/>
+<wire x1="-4.2926" y1="3.3274" x2="-3.2766" y2="3.3274" width="0.254" layer="21"/>
+</package>
+<package name="8L-WSON">
+<wire x1="-3" y1="2.5" x2="3" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="2.5" x2="3" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.5" x2="-3" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.5" x2="-3" y2="2.5" width="0.127" layer="21"/>
+<smd name="EP" x="0" y="0" dx="3.4" dy="4" layer="1"/>
+<smd name="2" x="-2.65" y="0.635" dx="0.6" dy="0.4" layer="1"/>
+<smd name="1" x="-2.65" y="1.905" dx="0.6" dy="0.4" layer="1"/>
+<smd name="3" x="-2.65" y="-0.635" dx="0.6" dy="0.4" layer="1"/>
+<smd name="4" x="-2.65" y="-1.905" dx="0.6" dy="0.4" layer="1"/>
+<smd name="7" x="2.65" y="0.635" dx="0.6" dy="0.4" layer="1"/>
+<smd name="8" x="2.65" y="1.905" dx="0.6" dy="0.4" layer="1"/>
+<smd name="6" x="2.65" y="-0.635" dx="0.6" dy="0.4" layer="1"/>
+<smd name="5" x="2.65" y="-1.905" dx="0.6" dy="0.4" layer="1"/>
+<text x="-3.0226" y="2.921" size="0.7112" layer="25">&gt;Name</text>
+<text x="-2.9972" y="-3.556" size="0.7112" layer="27">&gt;Value</text>
+<wire x1="-3.2258" y1="1.7526" x2="-3.2258" y2="2.7432" width="0.127" layer="21"/>
+<wire x1="-3.2258" y1="2.7432" x2="-2.1844" y2="2.7432" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIL16" urn="urn:adsk.eagle:package:922/2" locally_modified="yes" type="model">
@@ -2578,6 +2617,38 @@ ADC</text>
 <wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FLASH_AS5F34G04SND-08LIN">
+<wire x1="-15.24" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<pin name="CS" x="-20.32" y="7.62" length="middle"/>
+<pin name="SO/SIO1" x="-20.32" y="2.54" length="middle"/>
+<pin name="WP/SIO2" x="-20.32" y="-2.54" length="middle"/>
+<pin name="VSS" x="-20.32" y="-7.62" length="middle"/>
+<pin name="VCC" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="HOLD/SIO3" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SCLK" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SI/SIO0" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<text x="-15.24" y="11.43" size="1.778" layer="95">&gt;Name</text>
+<text x="-15.24" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="FLASH_MX25L25645GZNI-08G">
+<wire x1="-15.24" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<pin name="CS" x="-20.32" y="7.62" length="middle"/>
+<pin name="SO/SIO1" x="-20.32" y="2.54" length="middle"/>
+<pin name="WP/SIO2" x="-20.32" y="-2.54" length="middle"/>
+<pin name="GND" x="-20.32" y="-7.62" length="middle"/>
+<pin name="VCC" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="RESET/SIO3" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SCLK" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SI/SIO0" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<text x="-15.24" y="11.43" size="1.778" layer="95">&gt;Name</text>
+<text x="-15.24" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3750,6 +3821,55 @@ RETIRED IC-08153 (Also move to special)</description>
 <attribute name="TYPE" value="TYPE" constant="no"/>
 <attribute name="VALUE" value="Value" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLASH_AS5F34G04SND-08LIN" prefix="IC" uservalue="yes">
+<description>&lt;br&gt;Manufacturer's Part Number: AS5F34G04SND-08LIN&lt;/br&gt;
+&lt;br&gt;Digi-Key Part Number: 1450-AS5F34G04SND-08LIN-ND&lt;/br&gt;
+&lt;br&gt;Mouser Part Number: AS5F34G04SND-08LIN&lt;/br&gt;</description>
+<gates>
+<gate name="G$1" symbol="FLASH_AS5F34G04SND-08LIN" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="8-LGA">
+<connects>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="HOLD/SIO3" pad="7"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SI/SIO0" pad="5"/>
+<connect gate="G$1" pin="SO/SIO1" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="WP/SIO2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLASH_MX25L25645GZNI-08G" prefix="IC" uservalue="yes">
+<description>&lt;br&gt;Manufacturer's Part Number: MX25L25645GZNI-08G&lt;/br&gt;
+&lt;br&gt;Digi-Key Part Numer: 1092-1238-ND&lt;/br&gt;</description>
+<gates>
+<gate name="G$1" symbol="FLASH_MX25L25645GZNI-08G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8L-WSON">
+<connects>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
+<connect gate="G$1" pin="RESET/SIO3" pad="7"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SI/SIO0" pad="5"/>
+<connect gate="G$1" pin="SO/SIO1" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="WP/SIO2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
