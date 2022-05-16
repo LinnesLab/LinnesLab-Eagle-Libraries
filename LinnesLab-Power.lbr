@@ -2069,7 +2069,7 @@ MSOP&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC550X" prefix="LDO">
+<deviceset name="MIC550X" prefix="U">
 <description>&lt;h3&gt;MIC5504 Voltage Regulator&lt;/h3&gt;
 &lt;p&gt;
 

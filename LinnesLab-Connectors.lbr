@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1617,7 +1617,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <text x="-2.54" y="0.4572" size="0.7112" layer="25" ratio="20">&gt;NAME</text>
 <text x="-2.54" y="-0.9652" size="0.7112" layer="27" ratio="20">&gt;VALUE</text>
 </package>
-<package name="2X5-PTH-1.27MM" urn="urn:adsk.eagle:footprint:18579096/1">
+<package name="2X5-PTH-1.27MM" urn="urn:adsk.eagle:footprint:18579096/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole - 2x5 ARM Cortex Debug Connector (10-pin)&lt;/h3&gt;
 &lt;p&gt;tDoc (51) layer border represents maximum dimensions of plastic housing.&lt;/p&gt;
 &lt;p&gt;Specifications:
@@ -1638,7 +1638,7 @@ Holes are offset from center 0.005", to hold pins in place while soldering.
 <pad name="3" x="-1.27" y="-0.635" drill="0.508" diameter="1"/>
 <pad name="1" x="-2.54" y="-0.635" drill="0.508" diameter="1"/>
 <pad name="9" x="2.54" y="-0.635" drill="0.508" diameter="1"/>
-<wire x1="-3.403" y1="-1.021" x2="-3.403" y2="-0.259" width="0.254" layer="21"/>
+<wire x1="-3.5808" y1="-1.6052" x2="-3.5808" y2="-0.259" width="0.508" layer="21"/>
 <wire x1="3.175" y1="1.715" x2="-3.175" y2="1.715" width="0.127" layer="51"/>
 <wire x1="-3.175" y1="1.715" x2="-3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
@@ -10881,7 +10881,7 @@ Two pin, compact surface mount connector. Commonly used as a battery input conne
 </device>
 </devices>
 </deviceset>
-<deviceset name="CORTEX_DEBUG" prefix="DEBUG">
+<deviceset name="CORTEX_DEBUG" prefix="J">
 <description>&lt;h3&gt;Cortex Debug Connector - 10 pin&lt;/h3&gt;
 &lt;p&gt;Supports JTAG debug, Serial Wire debug, and Serial Wire Viewer.
 PTH and SMD connector options available.&lt;/p&gt;
@@ -13102,7 +13102,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 </devices>
 </deviceset>
-<deviceset name="MICROSD" prefix="SD" uservalue="yes">
+<deviceset name="MICROSD" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Micro-SD / Transflash card holder with SPI pinout&lt;/b&gt;
 &lt;p&gt;
 For the 3M # 2908-05WB-MG and/or 4UCON #19656&lt;br&gt;

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2618,7 +2618,7 @@ ADC</text>
 <wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
 </symbol>
-<symbol name="FLASH_AS5F34G04SND-08LIN">
+<symbol name="AS5FXXG04SND">
 <wire x1="-15.24" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
@@ -2726,7 +2726,7 @@ ADC</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AD5171">
+<deviceset name="AD5171" prefix="U">
 <gates>
 <gate name="G$1" symbol="DIGITAL.POT" x="0" y="0"/>
 </gates>
@@ -3825,12 +3825,22 @@ RETIRED IC-08153 (Also move to special)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FLASH_AS5F34G04SND-08LIN" prefix="U" uservalue="yes">
-<description>&lt;br&gt;Manufacturer's Part Number: AS5F34G04SND-08LIN&lt;/br&gt;
+<deviceset name="AS5FXXG04SND" prefix="U" uservalue="yes">
+<description>&lt;br&gt;&lt;b&gt;AS5FxxG04SND-08LIN 1/2/4/8 Gbit QSPI NAND Flash Breakout&lt;/b&gt;&lt;/br&gt;
+
+&lt;br&gt;&lt;/br&gt;
+&lt;br&gt;&lt;b&gt;Digi-Key Part Infomation&lt;/b&gt;&lt;/br&gt;
+&lt;br&gt;Manufacturer's Part Number: AS5F34G04SND-08LIN&lt;/br&gt;
 &lt;br&gt;Digi-Key Part Number: 1450-AS5F34G04SND-08LIN-ND&lt;/br&gt;
-&lt;br&gt;Mouser Part Number: AS5F34G04SND-08LIN&lt;/br&gt;</description>
+&lt;br&gt;Mouser Part Number: AS5F34G04SND-08LIN&lt;/br&gt;
+
+&lt;br&gt;&lt;/br&gt;
+&lt;br&gt;&lt;b&gt;Mouser Part Infomation&lt;/b&gt;&lt;/br&gt;
+&lt;br&gt;Manufacturer's Part Number: AS5F38G04SND-08LIN&lt;/br&gt;
+&lt;br&gt;Digi-Key Part Number: 1450-AS5F38G04SND-08LIN-ND&lt;/br&gt;
+&lt;br&gt;Mouser Part Number: 913-S5F38G04SND08LIN&lt;/br&gt;</description>
 <gates>
-<gate name="G$1" symbol="FLASH_AS5F34G04SND-08LIN" x="0" y="-2.54"/>
+<gate name="G$1" symbol="AS5FXXG04SND" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="8-LGA">
