@@ -4260,6 +4260,7 @@ Environ. Sensor</text>
 <pin name="VDD" x="12.7" y="7.62" length="short" direction="pwr" rot="R180"/>
 <pin name="WS" x="12.7" y="2.54" length="short" direction="in" rot="R180"/>
 <pin name="ENABLE" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="P$1" x="-12.7" y="-7.62" length="short"/>
 </symbol>
 <symbol name="ICS-43432">
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -5676,7 +5677,7 @@ interface settings to easily fit to customer applications.&lt;/p&gt;</descriptio
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPH0645LM4H-B" prefix="U">
+<deviceset name="SPH0645LM4H-B" prefix="MK">
 <description>Mic Mems Digital I2s Omni -26db &lt;a href="https://pricing.snapeda.com/parts/SPH0645LM4H-B/Knowles/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="SPH0645LM4H-B" x="0" y="0"/>
@@ -5799,7 +5800,7 @@ MotionTracking device that is ideally suited for smartphones, tablets, wearable 
 </device>
 </devices>
 </deviceset>
-<deviceset name="MIC_CMM-4030D-261-I2S-TR" prefix="J">
+<deviceset name="MIC_CMM-4030D-261-I2S-TR" prefix="MK">
 <description>MEMS MICROPHONE  &lt;a href="https://pricing.snapeda.com/parts/CMM-4030D-261-I2S-TR/CUI%20Devices/view-part?ref=eda"&gt;Check availability&lt;/a&gt;
 
 https://www.snapeda.com/parts/CMM-4030D-261-I2S-TR/CUI%20Devices/view-part/?plugin=snap_extension</description>
@@ -5813,6 +5814,7 @@ https://www.snapeda.com/parts/CMM-4030D-261-I2S-TR/CUI%20Devices/view-part/?plug
 <connect gate="G$1" pin="ENABLE" pad="4"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="L/R" pad="5"/>
+<connect gate="G$1" pin="P$1" pad="2"/>
 <connect gate="G$1" pin="SCK" pad="6"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="WS" pad="3"/>
