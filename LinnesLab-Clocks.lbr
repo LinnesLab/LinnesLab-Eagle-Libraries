@@ -463,14 +463,14 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<pin name="MAIN" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="AUX" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="V+" x="-12.7" y="7.62" length="middle"/>
-<pin name="GND" x="-12.7" y="5.08" length="middle"/>
-<pin name="SDA" x="-12.7" y="-7.62" length="middle"/>
-<pin name="SCL" x="-12.7" y="-10.16" length="middle"/>
-<pin name="ADR" x="-12.7" y="0" length="middle"/>
-<pin name="EN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="MAIN" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="AUX" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="V+" x="-10.16" y="7.62" length="short"/>
+<pin name="GND" x="-10.16" y="5.08" length="short"/>
+<pin name="SDA" x="-10.16" y="-7.62" length="short"/>
+<pin name="SCL" x="-10.16" y="-10.16" length="short"/>
+<pin name="ADR" x="-10.16" y="0" length="short"/>
+<pin name="EN" x="-10.16" y="-2.54" length="short"/>
 <text x="-7.62" y="11.43" size="1.778" layer="95">&gt;Name</text>
 <text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;Value</text>
 </symbol>
@@ -566,7 +566,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC6904">
+<deviceset name="LTC6904" prefix="U">
 <gates>
 <gate name="G$1" symbol="LTC6904" x="0" y="0"/>
 </gates>
