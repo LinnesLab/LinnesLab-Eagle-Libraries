@@ -2505,7 +2505,7 @@ Physcial Characteristics
 <smd name="6" x="0" y="1.4" dx="0.6" dy="0.525" layer="1"/>
 <text x="-3.3" y="-3.35" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:footprint:33724526/1">
+<package name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:footprint:36706839/1">
 <wire x1="1.325" y1="0.7" x2="1.325" y2="-1.04" width="0.127" layer="21"/>
 <wire x1="1.325" y1="-1.04" x2="-1.325" y2="-1.04" width="0.127" layer="21"/>
 <wire x1="-1.325" y1="-1.04" x2="-1.325" y2="0.7" width="0.127" layer="21"/>
@@ -3212,7 +3212,12 @@ Physcial Characteristics
 <packageinstance name="BME680"/>
 </packageinstances>
 </package3d>
-<package3d name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:package:33724525/1" type="box">
+<package3d name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:package:33724525/1" locally_modified="yes" type="box">
+<packageinstances>
+<packageinstance name="MIC_SPH0645LM4H-B"/>
+</packageinstances>
+</package3d>
+<package3d name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:package:36706838/2" type="model">
 <packageinstances>
 <packageinstance name="MIC_SPH0645LM4H-B"/>
 </packageinstances>
