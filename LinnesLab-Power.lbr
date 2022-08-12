@@ -212,7 +212,7 @@
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
-<package name="SOT23-5" urn="urn:adsk.eagle:footprint:15662428/1">
+<package name="SOT23-5" urn="urn:adsk.eagle:footprint:36751334/1">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
 <wire x1="-1.4" y1="0.8" x2="1.4" y2="0.8" width="0.1524" layer="51"/>
@@ -1241,7 +1241,13 @@ MSOP&lt;br&gt;
 <packageinstance name="DFN-8-2X3MM"/>
 </packageinstances>
 </package3d>
-<package3d name="SOT23-5" urn="urn:adsk.eagle:package:15662427/2" type="model">
+<package3d name="SOT23-5" urn="urn:adsk.eagle:package:15662427/2" locally_modified="yes" type="model">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="SOT23-5"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT23-5" urn="urn:adsk.eagle:package:36751333/2" type="model">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="SOT23-5"/>

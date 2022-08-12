@@ -175,7 +175,7 @@
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="C0603" urn="urn:adsk.eagle:footprint:15661990/1" locally_modified="yes">
+<package name="C0603" urn="urn:adsk.eagle:footprint:36755438/1">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <wire x1="-1.473" y1="0.5766" x2="1.473" y2="0.5766" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.5766" x2="1.473" y2="-0.5766" width="0.0508" layer="39"/>
@@ -1169,7 +1169,7 @@ Source: &lt;a href="http://www.bourns.com/pdfs/3314.pdf"&gt; Data sheet&lt;/a&gt
 <text x="-7.62" y="6.35" size="1.27" layer="25">&gt;Name</text>
 <text x="-7.62" y="-6.35" size="1.27" layer="27">&gt;Value</text>
 </package>
-<package name="L0603" urn="urn:adsk.eagle:footprint:18592196/1">
+<package name="L0603" urn="urn:adsk.eagle:footprint:36751318/1">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -1665,7 +1665,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <packageinstance name="R0201"/>
 </packageinstances>
 </package3d>
-<package3d name="C0603" urn="urn:adsk.eagle:package:15661989/2" type="model">
+<package3d name="C0603" urn="urn:adsk.eagle:package:15661989/2" locally_modified="yes" type="model">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="C0603"/>
@@ -1701,7 +1701,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <packageinstance name="C0603.POLAR"/>
 </packageinstances>
 </package3d>
-<package3d name="L0603" urn="urn:adsk.eagle:package:18592195/2" type="model">
+<package3d name="L0603" urn="urn:adsk.eagle:package:18592195/2" locally_modified="yes" type="model">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="L0603"/>
@@ -1723,6 +1723,18 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="R0603"/>
+</packageinstances>
+</package3d>
+<package3d name="L0603" urn="urn:adsk.eagle:package:36751317/2" type="model">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="L0603"/>
+</packageinstances>
+</package3d>
+<package3d name="C0603" urn="urn:adsk.eagle:package:36755437/2" type="model">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<packageinstances>
+<packageinstance name="C0603"/>
 </packageinstances>
 </package3d>
 </packages3d>
