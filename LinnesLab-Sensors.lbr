@@ -1807,7 +1807,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
-<package name="R0603" urn="urn:adsk.eagle:footprint:36751540/1">
+<package name="R0603" urn="urn:adsk.eagle:footprint:17881376/1" locally_modified="yes">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
 <wire x1="-0.432" y1="-0.356" x2="0.432" y2="-0.356" width="0.1524" layer="51"/>
 <wire x1="0.432" y1="0.356" x2="-0.432" y2="0.356" width="0.1524" layer="51"/>
@@ -2505,7 +2505,7 @@ Physcial Characteristics
 <smd name="6" x="0" y="1.4" dx="0.6" dy="0.525" layer="1"/>
 <text x="-3.3" y="-3.35" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:footprint:36706839/1">
+<package name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:footprint:33724526/1">
 <wire x1="1.325" y1="0.7" x2="1.325" y2="-1.04" width="0.127" layer="21"/>
 <wire x1="1.325" y1="-1.04" x2="-1.325" y2="-1.04" width="0.127" layer="21"/>
 <wire x1="-1.325" y1="-1.04" x2="-1.325" y2="0.7" width="0.127" layer="21"/>
@@ -3181,7 +3181,7 @@ Physcial Characteristics
 <packageinstance name="14-LGA"/>
 </packageinstances>
 </package3d>
-<package3d name="DIOC1608X30L" urn="urn:adsk.eagle:package:17881375/3" locally_modified="yes" type="model">
+<package3d name="DIOC1608X30L" urn="urn:adsk.eagle:package:17881375/3" type="model">
 <description>Chip, 1.60 X 0.80 X 0.30 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.30 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -3212,22 +3212,11 @@ Physcial Characteristics
 <packageinstance name="BME680"/>
 </packageinstances>
 </package3d>
-<package3d name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:package:33724525/1" locally_modified="yes" type="box">
+<package3d name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:package:33724525/1" type="box">
 <packageinstances>
 <packageinstance name="MIC_SPH0645LM4H-B"/>
 </packageinstances>
 </package3d>
-<<<<<<< HEAD
-<package3d name="MIC_SPH0645LM4H-B" urn="urn:adsk.eagle:package:36706838/2" type="model">
-<packageinstances>
-<packageinstance name="MIC_SPH0645LM4H-B"/>
-</packageinstances>
-</package3d>
-<package3d name="R0603" urn="urn:adsk.eagle:package:36751533/2" type="model">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<packageinstances>
-<packageinstance name="R0603"/>
-=======
 <package3d name="SAM-M8Q" urn="urn:adsk.eagle:package:36695384/2" type="model">
 <description>&lt;h3&gt;SAM-M8Q-0-10&lt;/h3&gt;
 Physcial Characteristics
@@ -3238,7 +3227,6 @@ Physcial Characteristics
 &lt;/ul&gt;</description>
 <packageinstances>
 <packageinstance name="SAM-M8Q"/>
->>>>>>> c006fccd6ff35b855956f42f84d912b3c43227f9
 </packageinstances>
 </package3d>
 </packages3d>
