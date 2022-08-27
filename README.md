@@ -1,79 +1,24 @@
 # Linnes Lab Eagle Libraries
 Linnes Lab's Public Eagle PCB Libraries (Devices, Footprints, Symbols, and 3D Models)
 
-
-### Analog IC
-Description
-Components List
-
-### Batteries
-Description
-Components List
-
-### Clocks
-Description
-Components List
-
-### Connectors
-Description
-Components List
-
-### Device Specific
-Description
-Components List
-
-### Digital IC
-Description
-Components List
-
-### Discrete Semiconductors
-Description
-Components List
-
-### Displays
-Description
-Components List
-
-### Electromechanical
-Description
-Components List
-
-### Hardware
-Description
-Components List
-
-### LED
-Description
-Components List
-
-### Logos
-Description
-Components List
-
-### Microcontrollers
-Description
-Components List
-
-### Passives
-Description
-Components List
-
-### Power
-Description
-Components List
-
-### Sensors
-Description
-Components List
-
-### Switches
-Description
-Components List
-
-### Symbols
-Description
-Components List
+- **Analog IC:** Operational amplifiers, analog switches, and other similar components
+- **Clocks:** Crystals, oscillators, programmable oscillators, etc.
+- **Connectors:** Header pins, JST connectors, and similar components
+- **Device Specific:** Components specific to custom-made Linnes Lab devices
+- **Digital IC:** Digital compponents such as level shifters, encoders, USB-to-serial bridges, analog-to-digital converters, etc.
+- **Discrete Semiconductors:** transistors, diodes, etc.
+- **Displays:** OLEDs, LCDs, LED matrices, etc.
+- **Electromechanical:** motors, buzzers, etc.
+- **Hardware:** screws, standoffs, etc.
+- **LED:** light-emitting diodes (surface mount, trough-hole, multi)
+- **Logos:** branding
+- **Microcontrollers:** Arduino, Teensy, shield footprints, individual ICs, etc.
+- **Passives:** resistors, capacitors, inductors (surface mount, through-hole)
+- **Power:** regulators, boost converters, chargers, fuel gauges, etc.
+- **Sensors:** photodiodes, photoresistors, etc.
+- **Switches:** mechanical switches
+- **Symbols:** circuit board symbols for power, ground, etc.
 
 
-####Attribution
-Thanks to libraries SparkFun, Adafruit, and other public repositories.
+## Attribution
+Thanks to libraries from SparkFun, Adafruit, and other public repositories. Also, huge thanks to SnapEDA for their tools as well.
