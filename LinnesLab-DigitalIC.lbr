@@ -3059,7 +3059,7 @@ ADC</text>
 <pin name="IN3_R" x="-22.86" y="2.54" length="short" direction="in"/>
 <pin name="LDOIN/HPVDD" x="-22.86" y="0" length="short" direction="in"/>
 <pin name="MCLK_(1)" x="-22.86" y="-2.54" length="short" direction="in" function="clk"/>
-<pin name="SCL/SSZ" x="-22.86" y="-5.08" length="short" direction="in"/>
+<pin name="SCL/CS" x="-22.86" y="-5.08" length="short" direction="in"/>
 <pin name="SCLK/MFP3" x="-22.86" y="-7.62" length="short" direction="in" function="clk"/>
 <pin name="SDA/MOSI" x="-22.86" y="-10.16" length="short" direction="in"/>
 <pin name="SPI_SELECT" x="-22.86" y="-12.7" length="short" direction="in"/>
@@ -4351,7 +4351,7 @@ RETIRED IC-08153 (Also move to special)</description>
 <connect gate="A" pin="MICBIAS" pad="19"/>
 <connect gate="A" pin="MISO/MFP4" pad="11"/>
 <connect gate="A" pin="REF" pad="18"/>
-<connect gate="A" pin="SCL/SSZ" pad="9"/>
+<connect gate="A" pin="SCL/CS" pad="9"/>
 <connect gate="A" pin="SCLK/MFP3" pad="8"/>
 <connect gate="A" pin="SDA/MOSI" pad="10"/>
 <connect gate="A" pin="SPI_SELECT" pad="12"/>

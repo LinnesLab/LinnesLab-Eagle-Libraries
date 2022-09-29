@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1736,9 +1736,6 @@
 <vertex x="3.72" y="0.111"/>
 <vertex x="3.55" y="0.111"/>
 </polygon>
-</package>
-<package name="WEBSITE.05">
-<text x="-6.35" y="0" size="1.27" layer="21">http://calveng.io</text>
 </package>
 <package name="PURDUE_BME_HANDLE.1">
 <text x="-11.43" y="0" size="2.54" layer="21">@PurdueBME</text>
@@ -6995,9 +6992,6 @@
 <vertex x="15.05" y="1.04"/>
 </polygon>
 </symbol>
-<symbol name="WEBSITE.1">
-<text x="0" y="0" size="3.81" layer="90">http://calveng.io</text>
-</symbol>
 <symbol name="PURDUE_BME_HANDLE.15">
 <text x="0" y="0" size="3.81" layer="90">@PurdueBME</text>
 </symbol>
@@ -7097,18 +7091,6 @@
 </gates>
 <devices>
 <device name="" package="ROHS_LOGO_0.18_IN">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="WEBSITE.05">
-<gates>
-<gate name="G$1" symbol="WEBSITE.1" x="-17.78" y="0"/>
-</gates>
-<devices>
-<device name="" package="WEBSITE.05">
 <technologies>
 <technology name=""/>
 </technologies>
