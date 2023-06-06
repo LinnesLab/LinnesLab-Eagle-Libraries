@@ -1368,6 +1368,80 @@ MSOP&lt;br&gt;
 <smd name="19" x="2.87" y="2.275" dx="1.57" dy="0.41" layer="1" roundness="25"/>
 <smd name="20" x="2.87" y="2.925" dx="1.57" dy="0.41" layer="1" roundness="25"/>
 </package>
+<package name="SOP65P490X104-9N">
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-3.11" y1="1.46" x2="-1.8" y2="1.46" width="0.05" layer="39"/>
+<wire x1="-1.8" y1="1.46" x2="-1.8" y2="1.8" width="0.05" layer="39"/>
+<wire x1="-1.8" y1="1.8" x2="1.8" y2="1.8" width="0.05" layer="39"/>
+<wire x1="1.8" y1="1.8" x2="1.8" y2="1.46" width="0.05" layer="39"/>
+<wire x1="1.8" y1="1.46" x2="3.11" y2="1.46" width="0.05" layer="39"/>
+<wire x1="3.11" y1="-1.46" x2="1.8" y2="-1.46" width="0.05" layer="39"/>
+<wire x1="1.8" y1="-1.46" x2="1.8" y2="-1.8" width="0.05" layer="39"/>
+<wire x1="1.8" y1="-1.8" x2="-1.8" y2="-1.8" width="0.05" layer="39"/>
+<wire x1="-1.8" y1="-1.8" x2="-1.8" y2="-1.46" width="0.05" layer="39"/>
+<wire x1="-1.8" y1="-1.46" x2="-3.11" y2="-1.46" width="0.05" layer="39"/>
+<wire x1="-3.11" y1="-1.46" x2="-3.11" y2="1.46" width="0.05" layer="39"/>
+<wire x1="3.11" y1="-1.46" x2="3.11" y2="1.46" width="0.05" layer="39"/>
+<rectangle x1="0.095" y1="-0.985" x2="0.665" y2="-0.095" layer="31"/>
+<rectangle x1="-0.665" y1="-0.985" x2="-0.095" y2="-0.095" layer="31"/>
+<rectangle x1="-0.665" y1="0.095" x2="-0.095" y2="0.985" layer="31"/>
+<rectangle x1="0.095" y1="0.095" x2="0.665" y2="0.985" layer="31"/>
+<circle x="-3.5" y="1" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.5" y="1" radius="0.1" width="0.2" layer="51"/>
+<text x="-2.7" y="1.9" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.6" y="-2.9" size="1.016" layer="27">&gt;VALUE</text>
+<smd name="1" x="-2.17" y="0.975" dx="1.37" dy="0.46" layer="1" roundness="50"/>
+<smd name="2" x="-2.17" y="0.325" dx="1.37" dy="0.46" layer="1" roundness="50"/>
+<smd name="3" x="-2.17" y="-0.325" dx="1.37" dy="0.46" layer="1" roundness="50"/>
+<smd name="4" x="-2.17" y="-0.975" dx="1.37" dy="0.46" layer="1" roundness="50"/>
+<smd name="5" x="2.17" y="-0.975" dx="1.37" dy="0.46" layer="1" roundness="50" rot="R180"/>
+<smd name="6" x="2.17" y="-0.325" dx="1.37" dy="0.46" layer="1" roundness="50" rot="R180"/>
+<smd name="7" x="2.17" y="0.325" dx="1.37" dy="0.46" layer="1" roundness="50" rot="R180"/>
+<smd name="8" x="2.17" y="0.975" dx="1.37" dy="0.46" layer="1" roundness="50" rot="R180"/>
+<smd name="9" x="0" y="0" dx="2.36" dy="1.73" layer="1" rot="R270" cream="no"/>
+</package>
+<package name="8-MSOP-EP">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="2" x="-2" y="0.325" dx="0.95" dy="0.33" layer="1"/>
+<smd name="3" x="-2" y="-0.325" dx="0.95" dy="0.33" layer="1"/>
+<smd name="4" x="-2" y="-0.975" dx="0.95" dy="0.33" layer="1"/>
+<smd name="1" x="-2" y="0.975" dx="0.95" dy="0.33" layer="1"/>
+<smd name="8" x="2" y="0.975" dx="0.95" dy="0.33" layer="1"/>
+<smd name="7" x="2" y="0.325" dx="0.95" dy="0.33" layer="1"/>
+<smd name="6" x="2" y="-0.325" dx="0.95" dy="0.33" layer="1"/>
+<smd name="5" x="2" y="-0.975" dx="0.95" dy="0.33" layer="1"/>
+<circle x="-2.132" y="1.622" radius="0.255265625" width="0.127" layer="21"/>
+<text x="-1.6" y="1.796" size="0.7112" layer="25">&gt;Name</text>
+<text x="-1.6" y="-2.481" size="0.7112" layer="27">&gt;Value</text>
+<smd name="P$1" x="0" y="0" dx="1.73" dy="2.4" layer="1"/>
+</package>
+<package name="10-WSON">
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<text x="-1.778" y="1.524" size="0.8128" layer="25">&gt;Name</text>
+<text x="-1.778" y="-2.286" size="0.8128" layer="27">&gt;Value</text>
+<wire x1="-1.2208" y1="0.7382" x2="-1.2208" y2="1.2462" width="0.127" layer="27"/>
+<wire x1="-1.2208" y1="1.2462" x2="-0.7112" y2="1.2462" width="0.127" layer="27"/>
+<smd name="3" x="-0.85" y="0" dx="0.3" dy="0.2" layer="1"/>
+<smd name="2" x="-0.85" y="0.4" dx="0.3" dy="0.2" layer="1"/>
+<smd name="1" x="-0.85" y="0.8" dx="0.3" dy="0.2" layer="1"/>
+<smd name="4" x="-0.85" y="-0.4" dx="0.3" dy="0.2" layer="1"/>
+<smd name="5" x="-0.85" y="-0.8" dx="0.3" dy="0.2" layer="1"/>
+<smd name="8" x="0.85" y="0" dx="0.3" dy="0.2" layer="1"/>
+<smd name="9" x="0.85" y="0.4" dx="0.3" dy="0.2" layer="1"/>
+<smd name="10" x="0.85" y="0.8" dx="0.3" dy="0.2" layer="1"/>
+<smd name="7" x="0.85" y="-0.4" dx="0.3" dy="0.2" layer="1"/>
+<smd name="6" x="0.85" y="-0.8" dx="0.3" dy="0.2" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1.5" dy="0.9" layer="1" rot="R90"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT23-6" urn="urn:adsk.eagle:package:18167559/2" type="model">
@@ -1856,6 +1930,50 @@ MSOP&lt;br&gt;
 <wire x1="-10.16" y1="-27.94" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
 <text x="-7.62" y="22.86" size="2.54" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-30.48" size="2.54" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MIC5357-3.3/1.8">
+<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="2.54" length="short"/>
+<pin name="EN3V3" x="-15.24" y="0" length="short"/>
+<pin name="EN1V8" x="-15.24" y="-2.54" length="short"/>
+<pin name="GND" x="-15.24" y="-7.62" length="short"/>
+<pin name="3.3VOUT" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="1.8VOUT" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="BYP" x="-15.24" y="-5.08" length="short"/>
+<text x="-12.7" y="6.35" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="TLV61070A">
+<wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="SW" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short"/>
+<pin name="EN" x="-10.16" y="0" length="short"/>
+<pin name="VIN" x="-10.16" y="5.08" length="short"/>
+<pin name="VOUT" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="-7.62" y="8.89" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="TLV751">
+<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="IN1" x="-15.24" y="2.54" length="short"/>
+<pin name="EN3V3" x="-15.24" y="-2.54" length="short"/>
+<pin name="EN1V8" x="-15.24" y="-5.08" length="short"/>
+<pin name="GND" x="-15.24" y="-7.62" length="short"/>
+<pin name="3.3VOUT" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="1.8VOUT" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="IN2" x="-15.24" y="0" length="short"/>
+<text x="-12.7" y="6.35" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2601,6 +2719,71 @@ http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf&lt;/il&gt;
 <connect gate="G$1" pin="VC4" pad="13"/>
 <connect gate="G$1" pin="VC5" pad="12"/>
 <connect gate="G$1" pin="VSS" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5357-3.3/1.8" prefix="U">
+<gates>
+<gate name="G$1" symbol="MIC5357-3.3/1.8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8-MSOP-EP">
+<connects>
+<connect gate="G$1" pin="1.8VOUT" pad="7"/>
+<connect gate="G$1" pin="3.3VOUT" pad="8"/>
+<connect gate="G$1" pin="BYP" pad="3"/>
+<connect gate="G$1" pin="EN1V8" pad="4"/>
+<connect gate="G$1" pin="EN3V3" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV61070A" prefix="U">
+<gates>
+<gate name="G$1" symbol="TLV61070A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="6"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18167559/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV751" prefix="U">
+<gates>
+<gate name="G$1" symbol="TLV751" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="10-WSON">
+<connects>
+<connect gate="G$1" pin="1.8VOUT" pad="8"/>
+<connect gate="G$1" pin="3.3VOUT" pad="10"/>
+<connect gate="G$1" pin="EN1V8" pad="5"/>
+<connect gate="G$1" pin="EN3V3" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4 PAD"/>
+<connect gate="G$1" pin="IN1" pad="9"/>
+<connect gate="G$1" pin="IN2" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
