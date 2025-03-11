@@ -14986,7 +14986,7 @@ Description:
 </device>
 </devices>
 </deviceset>
-<deviceset name="USB-C" prefix="USB" uservalue="yes">
+<deviceset name="USB-C" prefix="J" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="USB-C-MINIMUM" x="0" y="0"/>
 </gates>

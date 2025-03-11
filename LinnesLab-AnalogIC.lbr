@@ -1157,7 +1157,7 @@ Source: http://www.analog.com/media/en/technical-documentation/data-sheets/AD822
 </device>
 </devices>
 </deviceset>
-<deviceset name="OP-SINGLE" prefix="OP" uservalue="yes">
+<deviceset name="OP-SINGLE" prefix="U" uservalue="yes">
 <description>&lt;b&gt;Single Op Amp&lt;/b&gt; 2.7V to 6.0V Single Supply CMOS&lt;p&gt;
 Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 <gates>
@@ -1216,7 +1216,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OP-DUAL" prefix="OP" uservalue="yes">
+<deviceset name="OP-DUAL" prefix="U" uservalue="yes">
 <description>&lt;b&gt;Precision Micropower, Low Noise CMOS, Rail-to-Rail Input/Output Operational Amplifiers&lt;/b&gt;&lt;p&gt;
 Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609.pdf</description>
 <gates>
