@@ -934,7 +934,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="OP-QUAD" prefix="OP" uservalue="yes">
+<deviceset name="OP-QUAD" prefix="U" uservalue="yes">
 <description>General symbol and footprints for Quad Op Amps. Use with any standard general purpose op amp.</description>
 <gates>
 <gate name="G$1" symbol="OPAMP" x="-15.24" y="10.16"/>
